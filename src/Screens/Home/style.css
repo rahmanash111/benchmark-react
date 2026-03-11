@@ -1,0 +1,74 @@
+
+.slick-slide > div {
+  margin: 0 10px;
+}
+.slick-list {
+  margin: 0 -10px;
+}
+.events-Upcomming{
+  font-size: 25px;
+  color: #3ab7fa;
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.jobFair-Box {
+  width: 45%;
+  margin: 0 auto;
+  border: 2px solid #0d6efd57;
+  border-radius: 14px;
+  text-align: center;
+  padding: 20px;
+  box-shadow: 0 0 0px #0d6efd, 0 0 10px 0px #0d6efdb3, 0 0 0px #0d6efd;
+}
+
+.jobFair-Box-Header{
+  font-size: 35px;
+  font-weight: 600;
+}
+.jobFair-Box-content{
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 2;
+  padding: 20px 0;
+}
+
+.apply-now-btn {
+  background-color: #0d6efd;
+  color: white;
+  border: none;
+  padding: 12px 28px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 50px;
+  box-shadow: 0 8px 20px rgba(13, 110, 253, 0.3);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.apply-now-btn:hover {
+  background-color: #0b5ed7;
+  box-shadow: 0 10px 24px rgba(13, 110, 253, 0.4);
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .jobFair-Box {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .jobFair-Box-Header {
+    font-size: 28px;
+  }
+
+  .jobFair-Box-content {
+    font-size: 16px;
+  }
+
+  .apply-now-btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+  }
+}
