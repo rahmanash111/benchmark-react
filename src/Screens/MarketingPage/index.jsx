@@ -25,6 +25,7 @@ import ReviewVideo from "../../assets/Videos/review.mp4";
 import { gql, useMutation, useQuery } from "@apollo/client";
 import { useLocation, useParams } from "react-router-dom";
 import Loader from "../../Components/Loader";
+const graphqlBaseUrl = process.env.REACT_APP_GRAPHQL_API_URL.replace('/graphql', '');
 
 const MarketPage = () => {
   const [isLargeScreen, setIsLargeScreen] = useState(
@@ -297,7 +298,7 @@ const MarketPage = () => {
               {data && !loading ? data.eventslists[0].eventname : "Dummy"}
             </p>
 
-            <h2 class="text-center lg:text-left  text-[1.8rem] text-white  leading-snug font-bold " ><span>Start Your Career Through Further Education in <span></span></span><span class="flex items-center gap-2 md:justify-center lg:justify-start justify-center">{data && !loading ? data.eventslists[0].countryname : "Dummy"} <img src={`https://benchmark-backend.ideassionlive.in${data.eventslists[0]?.countryflag.url}`} alt=" Flag" class="h-5 w-5 object-cover ml-1"/></span></h2>
+            <h2 class="text-center lg:text-left  text-[1.8rem] text-white  leading-snug font-bold " ><span>Start Your Career Through Further Education in <span></span></span><span class="flex items-center gap-2 md:justify-center lg:justify-start justify-center">{data && !loading ? data.eventslists[0].countryname : "Dummy"} <img src={`${graphqlBaseUrl}${data.eventslists[0]?.countryflag.url}`} alt=" Flag" class="h-5 w-5 object-cover ml-1"/></span></h2>
 
             <h5 className="text-[1rem] font-bold text-red-600  text-left">
               Event Details
@@ -519,7 +520,7 @@ const MarketPage = () => {
           {!loading && data.eventslists[0].event_Invite_Video!=null && (
                <div className="h-[300px] relative   border-gray-800 w-[50%] my-10 flex flex-col items-center justify-center  rounded-lg group">
                <ReactPlayer
-                 url={`https://benchmark-backend.ideassionlive.in${data.eventslists[0]?.event_Invite_Video?.url}`}
+                 url={`${graphqlBaseUrl}${data.eventslists[0]?.event_Invite_Video?.url}`}
                  playing={currentVideoPlaying}
                  onPlay={() => setCurrentVideoPlaying(true)}
                  // onPause={() => setCurrentVideoPlayingIndex(null)}
@@ -673,7 +674,7 @@ const MarketPage = () => {
             >
               <div className="h-[600px]">
                 <img
-                  src={`https://benchmark-backend.ideassionlive.in${data.eventslists[0]?.benefits_bannerimg?.url}`}
+                  src={`${graphqlBaseUrl}${data.eventslists[0]?.benefits_bannerimg?.url}`}
                   alt=""
                   className="h-full w-full object-contain"
                 />
@@ -723,7 +724,7 @@ const MarketPage = () => {
             >
               <div className="h-[400px]">
                 <img
-                  src={`https://benchmark-backend.ideassionlive.in${data.eventslists[0]?.guest_img?.url}`}
+                  src={`${graphqlBaseUrl}${data.eventslists[0]?.guest_img?.url}`}
                   alt=""
                   className="h-full w-full object-contain"
                 />

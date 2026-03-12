@@ -2,6 +2,7 @@ import React from 'react'
 import {motion} from 'framer-motion'
 import { gql, useQuery } from '@apollo/client'
 import { Link, useNavigate, useNavigation } from 'react-router-dom'
+const graphqlBaseUrl = process.env.REACT_APP_GRAPHQL_API_URL.replace('/graphql', '');
 
 const EventSection = () => {
     const query = gql`query Eventslists {
@@ -56,7 +57,7 @@ const {data,loading,error}=useQuery(query);
             viewport={{ once: true }}
             transition={{ ease: "easeInOut", duration: 0.8 }} class="max-w-sm bg-white border border-gray-200 rounded-lg shadow-lg group font-Jakarta cursor-pointer"  key={index} >
                 <a>
-                    <img class="rounded-t-lg h-[230px] w-full object-cover" src={`https://benchmark-backend.ideassionlive.in${obj?.bannerimg?.url}`}alt="imgage.png" />
+                    <img class="rounded-t-lg h-[230px] w-full object-cover" src={`${graphqlBaseUrl}${obj?.bannerimg?.url}`}alt="imgage.png" />
                 </a>
                 <div class="p-5 flex-grow flex flex-col">
                     <a>

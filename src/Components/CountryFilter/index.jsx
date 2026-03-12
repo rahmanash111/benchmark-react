@@ -9,6 +9,7 @@ import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { gql, useQuery } from "@apollo/client";
+const graphqlBaseUrl = process.env.REACT_APP_GRAPHQL_API_URL.replace('/graphql', '');
 
 const CountryFilter = () => {
   const query = gql`
@@ -35,7 +36,7 @@ const CountryFilter = () => {
       countries: continent.countries.map((country) => ({
         id: country.documentId,
         country: country.CountryName,
-        image: `https://benchmark-backend.ideassionlive.in${country.CountryFlag.url}`, // Assuming base URL for flags
+        image: `${graphqlBaseUrl}${country.CountryFlag.url}`, // Assuming base URL for flags
         enabled: country.Enabled,
       })),
     })) || [];
@@ -89,8 +90,8 @@ const CountryFilter = () => {
                 to={
                   activeFilter === "Europe"
                     ? `/countries/${activeFilter
-                        .replace(/\s+/g, "-")
-                        .toLowerCase()}/${obj.country
+                      .replace(/\s+/g, "-")
+                      .toLowerCase()}/${obj.country
                         .replace(/\s+/g, "-")
                         .toLowerCase()}/`
                     : "javascript:void(0)"
@@ -143,8 +144,8 @@ const CountryFilter = () => {
                       to={
                         item.enabled
                           ? `/countries/${obj.continent
-                              .replace(/\s+/g, "-")
-                              .toLowerCase()}/${item.country
+                            .replace(/\s+/g, "-")
+                            .toLowerCase()}/${item.country
                               .replace(/\s+/g, "-")
                               .toLowerCase()}/`
                           : "javascript:void(0)"

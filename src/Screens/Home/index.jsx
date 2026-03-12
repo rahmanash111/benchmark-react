@@ -108,6 +108,7 @@ import StudyAbroadImg3 from "../../assets/Images/bg5.jpg";
 import digitalMarketingImg from "../../assets/Images/digitalMarketingImg.webp";
 import admission from "../../assets/Services/admission.webp";
 import EduJobFair from '../../assets/Images/EduJobFair.svg'
+const graphqlBaseUrl = process.env.REACT_APP_GRAPHQL_API_URL.replace('/graphql', '');
 
 const Home = () => {
   let sliderRef = useRef(null);
@@ -1582,10 +1583,7 @@ const Home = () => {
                   >
                     <div className="h-[50%] relative border-gray-800 w-full flex flex-col items-center justify-center rounded-lg group">
                       <ReactPlayer
-                        url={
-                          "https://benchmark-backend.ideassionlive.in" +
-                          obj.video.url
-                        }
+                        url={`${graphqlBaseUrl}${obj.video.url}`}
                         playing={currentVideoPlayingIndex === index}
                         onPlay={() => setCurrentVideoPlayingIndex(index)}
                         onEnded={() => setCurrentVideoPlayingIndex(null)}
