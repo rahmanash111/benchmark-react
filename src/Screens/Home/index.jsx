@@ -116,65 +116,65 @@ const Home = () => {
 
   const visaData = [
     {
-      type: "Career & Course Orientation",
+      type: "Career & Course Guidance",
       description:
-        "Receive personalized guidance on selecting the best course and career path based on your interests, skills, and aspirations. Our strong ties with top universities ensure you find the perfect program.",
+        "Get expert guidance to choose the right course and career path based on interests, skills, and long-term goals.",
       icon: AcademicCapIcon,
       bgColor: "bg-[#1D4ED8]", // Blue for career and course guidance
     },
     {
-      type: "SOP Evaluation & Counseling",
+      type: "SOP Review & Counseling",
       description:
-        "Craft a compelling Statement of Purpose (SOP) with our expert feedback. We help you highlight your strengths and ambitions to make a lasting impression on admission committees.",
+        "Receive professional support to create a strong Statement of Purpose that clearly presents achievements, goals, and motivations for university admission.",
       icon: PencilIcon,
       bgColor: "bg-[#D97706]", // Orange for creative writing
     },
     {
       type: "Language Training",
       description:
-        "Our IELTS Preparation (IELTS/UKVI) course offers personalized, one-to-one sessions delivered through call, Google Meet, or WhatsApp. The program includes 10 live speaking sessions, 4 mock tests, and writing corrections with detailed feedback.",
+        "Prepare for IELTS and UKVI exams with personalized training, mock tests, speaking practice, and detailed feedback to improve English proficiency.",
       icon: LanguageIcon,
       bgColor: "bg-[#000]", // Orange for creative writing
     },
     {
-      type: "Admission to World-Ranking Universities",
+      type: "Admission to Top Global Universities",
       description:
-        "Gain access to leading global universities. We assist you in applying to prestigious institutions that rank highly for academic excellence and career opportunities.",
+        "Get guidance for applying to globally recognized universities known for academic excellence, diverse programs, and strong career opportunities.",
       icon: GlobeAltIcon,
       bgColor: "bg-[#10B981]", // Green for opportunities worldwide
     },
     {
       type: "Scholarship & Financial Aid Guidance",
       description:
-        "We help you explore scholarship opportunities and secure financial aid, making education abroad more affordable and accessible.",
+        "Explore scholarship opportunities and financial aid options with expert guidance to make international education more affordable and accessible.",
       icon: CurrencyDollarIcon,
       bgColor: "bg-[#F59E0B]", // Gold for financial aid and success
     },
     {
-      type: "End-To-End Admission Support",
+      type: "Complete Admission Assistance",
       description:
-        "From application submission to securing acceptance letters, we provide complete support at every stage of the admission process, ensuring a smooth and efficient experience.",
+        "Receive end-to-end admission support, including university selection, application preparation, document review, and submission for a smooth process.",
       icon: CheckCircleIcon,
       bgColor: "bg-[#059669]", // Green for support and approval
     },
     {
-      type: "Visa & Spouse Visa Guidance",
+      type: "Visa & Spouse Visa Support",
       description:
-        "We offer full support for visa applications, including guidance for spouse visas for countries like Canada and the UK, ensuring a seamless transition for both students and their partners.",
+        "Get expert guidance for student visa and spouse visa applications, ensuring proper documentation and a smoother approval process.",
       icon: IdentificationIcon,
       bgColor: "bg-[#7C3AED]", // Purple for official processes
     },
     {
       type: "Educational Loan Assistance",
       description:
-        "With our bank partnerships, we streamline the process of obtaining education loans, handling all formalities and ensuring quick approval.",
+        "Access education loan support through trusted banking partners with guidance on documentation, eligibility, and quick processing.",
       icon: BanknotesIcon,
       bgColor: "bg-[#22D3EE]", // Teal for financial services
     },
     {
-      type: "Travel Desk & Accommodation",
+      type: "Travel & Accommodation Support",
       description:
-        "Our travel desk takes care of everything, from booking flights to arranging accommodation abroad, ensuring a hassle-free journey and comfortable stay.",
+        " Receive assistance with flight bookings and accommodation arrangements to ensure a comfortable and hassle-free transition abroad.",
       icon: PaperAirplaneIcon,
       bgColor: "bg-[#EA580C]", // Orange for travel and logistics
     },
@@ -185,35 +185,35 @@ const Home = () => {
       step: 1,
       title: "Study Abroad Adventures",
       description:
-        "Explore a world of opportunities with our diverse programs across Europe, Asia, Australia, New Zealand, the USA, and Canada. Expand your horizons academically and culturally.",
+        "Explore diverse international study programs across Europe, Asia, Australia, New Zealand, the USA, and Canada for academic and cultural growth.",
       bgColor: "bg-[#897CB5]",
     },
     {
       step: 2,
       title: "Tailored Educational Consultancy",
       description:
-        "Get expert advice on academic planning, college admissions, and career strategies, customized just for you.",
+        "Receive expert admission consultancy and academic planning, personalized to help you select the best universities and career paths.",
       bgColor: "bg-primary",
     },
     {
       step: 3,
       title: "Top-Tier Professional Training",
       description:
-        "Enhance your skills with premium training in Adult Nursing & Social Care, brought to you by our trusted partner, Amico Care.",
+        "Advance your career with premium nursing courses and professional training in healthcare, delivered by our trusted partner, Amico Care.",
       bgColor: "bg-secondary",
     },
     {
       step: 4,
       title: "Institutional Boost",
       description:
-        "Elevate your school or college with our support in curriculum development, accreditation, and strategic planning.",
+        "Enhance schools and colleges with curriculum development support, accreditation guidance, and strategic planning for educational excellence.",
       bgColor: "bg-[#FFBD0F]",
     },
     {
       step: 5,
       title: "Insightful Market Research",
       description:
-        "Stay ahead of the curve with our cutting-edge trends, data analysis, and continuous improvement strategies.",
+        "Stay competitive with education market insights, trends, and data analysis to drive continuous improvement and informed decision-making.",
       bgColor: "bg-[#897CB5]",
     },
   ];
@@ -225,7 +225,7 @@ const Home = () => {
       "bg-color": "#fe6c3f1a",
       border: "#FE6C3F",
       unit: "+",
-      description: "Experienced Consultants on Board",
+      description: "Experienced education consultants guiding careers",
     },
     {
       number: "50",
@@ -233,7 +233,7 @@ const Home = () => {
       "bg-color": "#1495f81a",
       unit: "+",
       border: "#0091FF",
-      description: "Educational Institutions Collaborated With",
+      description: "Collaborated with top educational institutions",
     },
     {
       number: "500",
@@ -241,7 +241,7 @@ const Home = () => {
       "bg-color": "#00CC991A",
       border: "#00CC99",
       unit: "+",
-      description: "Consultations Provided to Students and Parents",
+      description: "Provided study abroad consultations",
     },
     {
       number: "100",
@@ -249,7 +249,7 @@ const Home = () => {
       "bg-color": "#FFBB0F1A",
       border: "#FFBD0F",
       unit: "+",
-      description: "Career Counselling Sessions Delivered",
+      description: "Delivered career counselling sessions",
     },
   ];
 
@@ -362,34 +362,34 @@ const Home = () => {
     {
       id: 1,
       question:
-        "What is the process for applying to study abroad programs through Benchmark Education LLP?",
+        "What is the process for applying through Benchmark Education?",
       answer:
-        "Our process includes an initial consultation to understand your needs, selecting suitable programs and institutions, assisting with application forms and supporting documents, helping with visa applications, and providing guidance throughout the entire process until you start your studies abroad.",
+        "Our education consultants guide you through university admissions, document preparation, visa assistance, and application submission, ensuring a smooth and successful international education process.",
     },
     {
       id: 2,
-      question: "How do I know which study abroad program is right for me?",
+      question: "How do I know which program is right for me?",
       answer:
-        "Our consultants work closely with you to understand your academic interests, career goals, and personal preferences. Based on this information, we recommend programs and institutions that best align with your objectives and offer the best fit for your needs.",
+        "Our career guidance experts assess academic interests, career goals, and preferences to recommend suitable higher education programs and universities matching long-term professional objectives.",
     },
     {
       id: 3,
       question: "Are your language training programs online or in-person?",
       answer:
-        "We offer both online and in-person language training options, depending on your location and preferences. Our online programs provide flexibility, while in-person classes offer a more immersive learning experience.",
+        "Benchmark Education offers flexible IELTS coaching and English language training through online sessions and classroom learning for improved communication and global study preparation.",
     },
     {
       id: 4,
       question:
-        "What are the eligibility criteria for your study abroad programs?",
+        "What are the eligibility criteria for your programs?",
       answer:
-        "Eligibility criteria vary depending on the program and institution. Generally, you need to meet academic requirements, language proficiency standards, and other specific criteria set by the institution. Our team will guide you through these requirements and help ensure you meet them.",
+        " Eligibility depends on university admission requirements, academic qualifications, and English language proficiency. Our team provides guidance to meet necessary criteria for successful applications.",
     },
     {
       id: 5,
-      question: "Can you assist with career counseling for students?",
+      question: "Do you provide career counseling services?",
       answer:
-        "Yes, we provide career counseling services to help students identify their career goals, explore potential career paths, and map out educational pathways to achieve their objectives. Our counselors offer personalized advice and support based on individual aspirations.",
+        "Yes, our career counselling services help identify strengths, explore career development opportunities, and choose the right professional courses for long-term career growth.",
     },
   ]);
 
@@ -507,7 +507,7 @@ const Home = () => {
       image: ChildDev,
     },
     {
-      id: 12,
+      id: 12,         
       name: "Civil Engineering",
       image: CivilEng,
     },
@@ -937,13 +937,16 @@ const Home = () => {
           className="flex flex-col space-y-6 text-center md:text-left max-w-xl"
         >
           <h2 className="text-4xl md:text-5xl font-semibold leading-tight">
-            Digital Marketing Academy
+            Best Institute for Digital Marketing
           </h2>
 
           <p className="text-[16px] md:text-[18px] text-text leading-relaxed">
-            Master the art of digital marketing with our specialized programs.
-            Learn SEO, social media marketing, branding, and analytics to grow
-            your business and career in the fast-paced digital world.
+            Benchmark Education is one of the best institutes for digital marketing,
+             offering comprehensive training designed for beginners and professionals. 
+             Expert trainers focus on practical learning in SEO, social media marketing,
+              content marketing, and online advertising. With an industry-relevant curriculum and hands-on projects, 
+              the program builds strong skills and confidence to succeed in today’s fast-growing digital marketing industry.  
+
           </p>
 
           <div className="flex flex-col space-y-3">
@@ -981,9 +984,12 @@ const Home = () => {
           </h2>
 
           <p className="text-[16px] md:text-[18px] text-text leading-relaxed">
-            Explore top destinations and programs worldwide. Start your journey
-            with expert guidance, end-to-end application support, and a community
-            that helps you thrive abroad.
+            Benchmark Education offers expert guidance for study abroad programs, 
+            helping individuals choose the right country, university, and course. 
+            From application support and documentation to visa assistance, 
+            every step is handled with professional care. With trusted advice and updated information, 
+            the process becomes simple and clear for those planning to pursue higher education in leading international destinations.
+
           </p>
 
           <div>
@@ -1048,9 +1054,12 @@ const Home = () => {
           </h2>
 
           <p className="text-[16px] md:text-[18px] text-text leading-relaxed">
-            Discover world-class education opportunities within India. 
-            From management to healthcare, India offers top-tier institutions, 
-            cultural diversity, and affordable education that empowers your career.
+            Benchmark Education offers reliable guidance for those looking to study in India,
+            connecting learners with top universities and diverse academic programs. 
+            From selecting the right course to assisting with admissions and documentation, 
+            every stage is supported with expert advice. 
+            The focus is on making the process simple while ensuring access to quality education and strong career opportunities.
+
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 sm:justify-start justify-center">
@@ -1082,7 +1091,7 @@ const Home = () => {
         <div className="flex flex-row space-x-2 items-center w-full justify-center">
           <hr className="w-[10%]  border-text " />
           <p className="text-center">
-            We're proud to work with our preffered partners
+           Benchmark Education partners with top universities and institutions worldwide
           </p>
           <hr className="w-[10%] border-text " />
         </div>
@@ -1212,10 +1221,8 @@ const Home = () => {
             <span className="text-text">Globally.</span>
           </motion.h2>
           <p className="text-[20px] animate-fadein text-text lg:w-[60%] md:w-1/2 text-center lg:text-left">
-            We offer bespoke study abroad programs and expert consultancy to
-            open doors to top institutions worldwide. Our comprehensive support
-            ensures a smooth path to achieving your academic and career
-            aspirations.
+            We offer bespoke study abroad programs and expert consultancy to access top universities worldwide,
+           ensuring smooth academic and career success..
           </p>
           <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-5 w-full lg:w-[90%]">
             {stepsData.map((step, index) => (
@@ -1346,10 +1353,9 @@ const Home = () => {
             <span className="text-text"> Courses</span>
           </motion.h2>
           <p className="text-text text-center text-[16px]">
-            At Benchmark Education, we offer a diverse range of courses tailored
-            to meet the demands of today’s job market. Whether you’re looking to
-            advance in your current profession or embark on a new path, our
-            courses provide a strong foundation for your future
+            At Benchmark Education, we offer a wide range of professional courses and 
+            skill development programs designed for career growth. 
+            Our career-oriented courses equip learners with practical skills and industry-relevant knowledge.
           </p>
           <div className="grid grid-cols-1 xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-2 z-20 gap-5 my-5 font-Jakarta  place-items-center items-center justify-center ">
             {getPaginatedCourseData().map((courses, index) => {
@@ -1445,9 +1451,9 @@ const Home = () => {
               <span className="text-text"> Guidance Team</span>
             </motion.h2>
             <p className="text-text text-center text-[18px] animate-fadein ">
-              With a wealth of experience and expertise in the field, they guide
-              our efforts to ensure that every student receives the best
-              possible support throughout their immigration journey.
+             Our experienced study abroad consultants provide personalized support, 
+             guiding students through international education and immigration processes
+             to ensure a smooth journey toward global academic and career success.
             </p>
           </div>
           <div className="grid grid-cols-1 xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 place-content-center place-items-center font-Jakarta gap-5 bg-background rounded-lg py-10 px-5 relative top-0 w-full">
@@ -1557,8 +1563,9 @@ const Home = () => {
               <span className="text-text"> Journey with Us</span>
             </motion.h2>
             <p className="text-text text-center text-[18px]">
-              Embark on a Global Exploration: Experience Joy in 190+ Countries
-              and Across the World
+             Our satisfied study abroad students share experiences exploring 
+             international education opportunities across 190+ countries worldwide.
+
             </p>
           </div>
           <div className="overflow-hidden flex flex-col gap-5">
@@ -1679,8 +1686,9 @@ const Home = () => {
               <span className="text-text">Questions</span>
             </motion.h2>
             <p className="text-[18px] animate-fadein text-text text-center lg:text-left lg:w-[80%] w-full">
-              Find Answers to Common Questions About Our Services, Study Abroad
-              Programs, and Educational Consulting
+              Find answers to common questions about our education consultancy services, 
+              international education, and professional training programs.
+
             </p>
             <img src={FQIMG} alt="" />
           </div>

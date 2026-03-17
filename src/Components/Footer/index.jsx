@@ -232,8 +232,7 @@ const Footer = () => {
               <h5 className="font-bold text-[17px]">Contact Us</h5>
             </div>
             <h4 className="text-[23px] font-semibold">
-              Ready to take the next step in your educational journey? Get in
-              touch with us today
+              Ready to take the next step in your education? Connect with us today and start your learning journey
             </h4>
             <form className="flex flex-col space-y-7" onSubmit={handleSubmit}>
               <div className="flex flex-col lg:flex-row space-x-0  lg:space-x-1 lg:space-y-0 space-y-5">
@@ -362,8 +361,8 @@ const Footer = () => {
       <div className="lg:w-[90%] w-[95%] grid lg:grid-cols-3 grid-cols-1 h-full gap-5 py-5">
         <div className="flex flex-col items-start space-y-10 px-5 py-5 ">
           <h4 className="text-[1.6rem] font-bold">
-            Ready to take the next step in your educational journey? Get in
-            touch with us today
+           Ready to take the next step in your education? Connect with us today and 
+           start your learning journey
           </h4>
           <ul className="flex flex-col gap-5">
             <li className="flex flex-row gap-5 items-center text-[1rem] font-semibold">
