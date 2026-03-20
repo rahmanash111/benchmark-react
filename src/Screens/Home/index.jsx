@@ -876,7 +876,7 @@ const Home = () => {
             className="relative w-full md:w-1/2 overflow-hidden shadow-xl group rounded-2xl"
           >
             <img
-              src={digitalMarketingImgBvoc}
+              src={digitalMarketingImg}
               alt="Digital Marketing Academy"
               className="w-full h-[320px] md:h-[420px] object-cover transform group-hover:scale-105 transition-transform duration-500"
             />
@@ -885,7 +885,7 @@ const Home = () => {
 
           {/* RIGHT CONTENT */}
           <motion.div
-          
+
             initial={{ opacity: 0, x: 60 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
@@ -897,7 +897,7 @@ const Home = () => {
             </h2>
 
             <p className="text-[16px] md:text-[18px] text-text leading-relaxed">
-              Benchmark Education offers a comprehensive diploma in digital marketing designed to build practical skills in SEO, social media marketing, content marketing, and online advertising. Our digital marketing course focuses on real-world training, industry tools, and expert guidance to help students gain job-ready skills and grow confidently in today’s competitive digital marketing industry with hands-on learning and career-focused support. 
+              Benchmark Education offers a comprehensive diploma in digital marketing designed to build practical skills in SEO, social media marketing, content marketing, and online advertising. Our digital marketing course focuses on real-world training, industry tools, and expert guidance to help students gain job-ready skills and grow confidently in today’s competitive digital marketing industry with hands-on learning and career-focused support.
             </p>
 
             <div className="flex flex-col space-y-3">
@@ -930,7 +930,7 @@ const Home = () => {
             className="relative w-full md:w-1/2 overflow-hidden shadow-xl group rounded-2xl"
           >
             <img
-              src={digitalMarketingImg}
+              src={digitalMarketingImgBvoc}
               alt="Digital Marketing Academy"
               className="w-full h-[320px] md:h-[420px] object-cover transform group-hover:scale-105 transition-transform duration-500"
             />
@@ -946,21 +946,16 @@ const Home = () => {
             className="flex flex-col space-y-6 text-center md:text-left max-w-xl"
           >
             <h2 className="text-4xl md:text-5xl font-semibold leading-tight">
-              Best Institute for Digital Marketing
+              B.Voc Digital Marketing Program
             </h2>
 
             <p className="text-[16px] md:text-[18px] text-text leading-relaxed">
-              Benchmark Education is one of the best institutes for digital marketing,
-              offering comprehensive training designed for beginners and professionals.
-              Expert trainers focus on practical learning in SEO, social media marketing,
-              content marketing, and online advertising. With an industry-relevant curriculum and hands-on projects,
-              the program builds strong skills and confidence to succeed in today’s fast-growing digital marketing industry.
-
+              Build a future-ready career with our B.Voc digital marketing program designed for real-world learning. Gain hands-on experience through live digital marketing projects, along with a 3 month internship in first year and a 6 month internship in final year. This job-oriented digital marketing degree program equips you with in-demand skills and practical exposure to succeed in the industry.
             </p>
 
             <div className="flex flex-col space-y-3">
               <p className="text-[14px] md:text-[16px] text-text leading-relaxed font-medium">
-                <span className="text-primary">New Add-ons:</span> Neuro Digital Marketing, Advanced Excel, and Web Development modules now available!
+                <span className="text-primary">New Add-ons:</span> Video Editing, Graphic Design, UI/UX Design, and Neuro Digital Marketing modules now available!
               </p>
               <div className="flex flex-col sm:flex-row gap-4 sm:justify-start justify-center">
                 <Link
