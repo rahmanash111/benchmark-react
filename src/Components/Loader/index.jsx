@@ -14,7 +14,7 @@ const Loader = () => {
         </div>
         <div className="absolute w-full flex justify-center">
           <div
-            className="w-[160px] h-[160px] rounded-full animate-earthanimation border-2 shadow-2xl shadow-primary"
+            className="w-[160px] h-[160px] rounded-full animate-earthanimation border-2 shadow-xl shadow-primary"
             style={{
               backgroundImage: `url(${Earth})`,
               backgroundSize: "340px",
