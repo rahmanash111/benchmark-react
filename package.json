@@ -34,6 +34,12 @@
     "web-vitals": "^2.1.4",
     "yarn": "^1.22.22"
   },
+  "overrides": {
+    "@material-tailwind/react": {
+      "react": "18.3.1",
+      "react-dom": "18.3.1"
+    }
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",

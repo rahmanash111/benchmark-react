@@ -29,7 +29,7 @@ const CounsellingForm = ({ isopenForm, setOpenForm }) => {
   const [localopenForm, setLocalOpenForm] = useState(isopenForm);
 
   useEffect(() => {
-    setLocalOpenForm(isopenForm);
+    setLocalOpenForm(isopenForm);   
   }, [isopenForm]);
 
   const [activeStep, setActiveStep] = useState(0);
@@ -988,7 +988,7 @@ const CounsellingForm = ({ isopenForm, setOpenForm }) => {
                       className="h-5 w-5 form-radio text-primary accent-primary border-gray-400"
                     />
                     <label htmlFor="No" className="ml-2 text-gray-700">
-                      No
+                      No                               
                     </label>
                   </div>
                 </div>

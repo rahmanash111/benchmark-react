@@ -12,21 +12,21 @@ const ScholarshipAndFinance = () => {
             {
                 "id": "4.1",
                 "title": "Maximizing Financial Opportunities",
-                "description": "Studying abroad can be expensive, but our team helps you explore various scholarships, grants, and financial aid options to reduce the burden. We guide you through merit-based scholarships, need-based grants, and other funding opportunities offered by universities, governments, and private organizations.",
+                "description": "Studying abroad can be expensive, but Benchmark Education helps you access scholarships, grants, and financial aid options tailored to your needs. With guidance on international scholarship programs and education funding support, we simplify planning and reduce financial stress.",
                 "icon": CurrencyDollarIcon,
                 "bgColor": "#FFABAB"
             },
             {
                 "id": "4.2",
                 "title": "Application Strategy",
-                "description": "We help you identify the scholarships and financial aid programs you’re eligible for, and provide support in preparing and submitting applications. This includes crafting compelling scholarship essays, gathering necessary documents, and meeting specific application requirements.",
+                "description": "Our team helps you identify scholarships and financial aid programs you’re eligible for, guiding every step. From writing persuasive essays to organizing required documents and meeting deadlines, our scholarship application assistance ensures your submissions are competitive, complete, and aligned with your goals.",
                 "icon": BookOpenIcon,
                 "bgColor": "#FFEC40"
             },
             {
                 "id": "4.3",
                 "title": "Financial Planning",
-                "description": "We also assist with creating a financial plan to ensure you can comfortably afford your education abroad. Our team will work with you to explore all available options, including loans, part-time work opportunities, and funding sources in your destination country.",
+                "description": "We design personalized financial strategies to manage education costs abroad. By exploring student funding opportunities, part-time work options, and loans in your destination country, our experts help you secure resources efficiently, enabling a stress-free study experience while maximizing available financial support.",
                 "icon": CalculatorIcon,
                 "bgColor": "#D1C4E9"
             }
@@ -35,21 +35,21 @@ const ScholarshipAndFinance = () => {
             {
                 "id": "4.4",
                 "title": "Scholarship Identification",
-                "description": "Based on your academic profile and achievements, we identify relevant scholarships and grants.",
+                "description": " Discover global scholarship opportunities matching your academic achievements and career goals.",
                 "icon": MagnifyingGlassCircleIcon,
                 "bgColor": "#E0F7FA"
             },
             {
                 "id": "4.5",
                 "title": "Eligibility and Application Support",
-                "description": "Help you determine eligibility and guide you through the application process, including writing essays and gathering documents.",
+                "description": " Receive scholarship application guidance to meet requirements, submit documents, and craft compelling essays.",
                 "icon": DocumentArrowUpIcon,
                 "bgColor": "#FFB74D"
             },
             {
                 "id": "4.6",
                 "title": "Financial Planning",
-                "description": "Develop a comprehensive financial plan to cover tuition, living expenses, and other costs associated with studying abroad.",
+                "description": " Create student funding strategies to manage tuition, living expenses, and study abroad costs efficiently.",
                 "icon": ClipboardDocumentCheckIcon,
                 "bgColor": "#C8E6C9"
             }

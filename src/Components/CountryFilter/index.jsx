@@ -9,6 +9,7 @@ import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { gql, useQuery } from "@apollo/client";
+const graphqlBaseUrl = process.env.REACT_APP_GRAPHQL_API_URL.replace('/graphql', '');
 
 const CountryFilter = () => {
   const query = gql`
@@ -35,7 +36,7 @@ const CountryFilter = () => {
       countries: continent.countries.map((country) => ({
         id: country.documentId,
         country: country.CountryName,
-        image: `https://benchmark-backend.ideassionlive.in${country.CountryFlag.url}`, // Assuming base URL for flags
+        image: `${graphqlBaseUrl}${country.CountryFlag.url}`, // Assuming base URL for flags
         enabled: country.Enabled,
       })),
     })) || [];
@@ -62,96 +63,64 @@ const CountryFilter = () => {
   }, [activeFilter]);
 
   if (loading) return <p>Loading...</p>;
-  if (error) return <p>Error loading data: {error.message}</p>;
 
   return (
-    <section>
-      <div className="lg:hidden md:hidden block">
-        <div className="bg-background py-2 my-5 rounded-lg flex flex-row lg:flex-row md:flex-row xl:flex-row flex-wrap space-x-0 lg:space-x-5 md:space-x-5 justify-start lg:justify-between  px-5">
-          <select
-            name="country"
-            id="country"
-            className="w-full bg-transparent py-5 outline-none"
-            onChange={(e) => setActiveFilter(e.target.value)}
-          >
-            {countryData.map((obj, index) => (
-              <option key={index} value={obj.continent}>
-                {obj.continent}
-              </option>
-            ))}
-          </select>
-        </div>
-
-        <div className="grid grid-cols-2 lg:grid-cols-4 place-items-center gap-10">
-          {countries.map((obj, index) => (
-            <button key={index} disabled={activeFilter === "Europe"}>
-              <Link
-                to={
-                  activeFilter === "Europe"
-                    ? `/countries/${activeFilter
-                        .replace(/\s+/g, "-")
-                        .toLowerCase()}/${obj.country
-                        .replace(/\s+/g, "-")
-                        .toLowerCase()}/`
-                    : "javascript:void(0)"
-                }
-                state={{
-                  continentName: activeFilter,
-                  countryName: obj.country,
-                }}
+    <>
+      {countryData?.length > 0 &&
+        <>
+          <div className="w-[90%] h-full font-Jakarta flex flex-col space-y-8">
+            <div className="flex flex-row flex-wrap items-center justify-between">
+              <motion.h2
+                initial={{ opacity: 0, translateY: 150 }}
+                whileInView={{ opacity: 1, translateY: 0 }}
+                viewport={{ once: true }}
+                transition={{ ease: "easeInOut", duration: 0.8 }}
+                className="lg:text-left xl:text-left md:text-left text-4xl md:text-5xl text-center  leading-snug font-semibold"
+                style={{ lineHeight: 1.3 }}
               >
-                <motion.div
-                  initial={{ opacity: 0, scale: 0.5 }}
-                  whileInView={{ opacity: 1, scale: 1 }}
-                  viewport={{ once: true }}
-                  transition={{ ease: "easeInOut", duration: 0.8 }}
-                  className="flex flex-row items-center justify-center gap-5 border w-[145px] lg:w-[250px] md:w-[250px] xl:w-[250px] py-2 rounded-lg cursor-pointer hover:shadow-lg"
+                Discover Your Perfect
+                <br />
+                <span className="text-text"> Study Abroad Destination</span>
+              </motion.h2>
+              <p className="w-full md:w-full lg:w-[40%] text-[20px] text-text">
+                Unlock global opportunities with Benchmark Education. Let us guide
+                you to the perfect study destination for a brighter future.
+              </p>
+            </div>
+          </div>
+          <section>
+            <div className="lg:hidden md:hidden block">
+              <div className="bg-background py-2 my-5 rounded-lg flex flex-row lg:flex-row md:flex-row xl:flex-row flex-wrap space-x-0 lg:space-x-5 md:space-x-5 justify-start lg:justify-between  px-5">
+                <select
+                  name="country"
+                  id="country"
+                  className="w-full bg-transparent py-5 outline-none"
+                  onChange={(e) => setActiveFilter(e.target.value)}
                 >
-                  <div
-                    className="h-[25px] w-[25px] rounded-full bg-no-repeat bg-center bg-cover border "
-                    style={{
-                      background: `url(${obj.image}) no-repeat center/cover`,
-                    }}
-                  ></div>
-                  <h5 className="text-[13px]">{obj.country}</h5>
-                </motion.div>
-              </Link>
-            </button>
-          ))}
-        </div>
-      </div>
-      <div className="hidden lg:block md:block">
-        <Tabs value={activeFilter}>
-          <TabsHeader>
-            {countryData.map((obj, index) => (
-              <Tab
-                key={index}
-                value={obj.continent}
-                onClick={() => setActiveFilter(obj.continent)}
-              >
-                {obj.continent}
-              </Tab>
-            ))}
-          </TabsHeader>
-          <TabsBody>
-            {countryData.map((obj, index) => (
-              <TabPanel key={index} value={obj.continent}>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
-                  {obj.countries.map((item, idx) => (
+                  {countryData.map((obj, index) => (
+                    <option key={index} value={obj.continent}>
+                      {obj.continent}
+                    </option>
+                  ))}
+                </select>
+              </div>
+
+              <div className="grid grid-cols-2 lg:grid-cols-4 place-items-center gap-10">
+                {countries.map((obj, index) => (
+                  <button key={index} disabled={activeFilter === "Europe"}>
                     <Link
-                      key={idx}
                       to={
-                        item.enabled
-                          ? `/countries/${obj.continent
-                              .replace(/\s+/g, "-")
-                              .toLowerCase()}/${item.country
+                        activeFilter === "Europe"
+                          ? `/countries/${activeFilter
+                            .replace(/\s+/g, "-")
+                            .toLowerCase()}/${obj.country
                               .replace(/\s+/g, "-")
                               .toLowerCase()}/`
                           : "javascript:void(0)"
                       }
                       state={{
-                        continentName: obj.continent,
-                        countryName: item.country,
+                        continentName: activeFilter,
+                        countryName: obj.country,
                       }}
                     >
                       <motion.div
@@ -159,25 +128,82 @@ const CountryFilter = () => {
                         whileInView={{ opacity: 1, scale: 1 }}
                         viewport={{ once: true }}
                         transition={{ ease: "easeInOut", duration: 0.8 }}
-                        className="flex flex-row items-center justify-center space-x-5 border w-[150px] lg:w-[250px] md:w-[250px] xl:w-[250px] py-2 rounded-lg cursor-pointer hover:shadow-lg"
+                        className="flex flex-row items-center justify-center gap-5 border w-[145px] lg:w-[250px] md:w-[250px] xl:w-[250px] py-2 rounded-lg cursor-pointer hover:shadow-lg"
                       >
                         <div
-                          className="h-[50px] w-[50px] rounded-full bg-no-repeat bg-center bg-cover border"
+                          className="h-[25px] w-[25px] rounded-full bg-no-repeat bg-center bg-cover border "
                           style={{
-                            background: `url(${item.image}) no-repeat center/cover`,
+                            background: `url(${obj.image}) no-repeat center/cover`,
                           }}
                         ></div>
-                        <h5>{item.country}</h5>
+                        <h5 className="text-[13px]">{obj.country}</h5>
                       </motion.div>
                     </Link>
+                  </button>
+                ))}
+              </div>
+            </div>
+            <div className="hidden lg:block md:block">
+              <Tabs value={activeFilter}>
+                <TabsHeader>
+                  {countryData.map((obj, index) => (
+                    <Tab
+                      key={index}
+                      value={obj.continent}
+                      onClick={() => setActiveFilter(obj.continent)}
+                    >
+                      {obj.continent}
+                    </Tab>
                   ))}
-                </div>
-              </TabPanel>
-            ))}
-          </TabsBody>
-        </Tabs>
-      </div>
-    </section>
+                </TabsHeader>
+                <TabsBody>
+                  {countryData.map((obj, index) => (
+                    <TabPanel key={index} value={obj.continent}>
+                      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+                        {obj.countries.map((item, idx) => (
+                          <Link
+                            key={idx}
+                            to={
+                              item.enabled
+                                ? `/countries/${obj.continent
+                                  .replace(/\s+/g, "-")
+                                  .toLowerCase()}/${item.country
+                                    .replace(/\s+/g, "-")
+                                    .toLowerCase()}/`
+                                : "javascript:void(0)"
+                            }
+                            state={{
+                              continentName: obj.continent,
+                              countryName: item.country,
+                            }}
+                          >
+                            <motion.div
+                              initial={{ opacity: 0, scale: 0.5 }}
+                              whileInView={{ opacity: 1, scale: 1 }}
+                              viewport={{ once: true }}
+                              transition={{ ease: "easeInOut", duration: 0.8 }}
+                              className="flex flex-row items-center justify-center space-x-5 border w-[150px] lg:w-[250px] md:w-[250px] xl:w-[250px] py-2 rounded-lg cursor-pointer hover:shadow-lg"
+                            >
+                              <div
+                                className="h-[50px] w-[50px] rounded-full bg-no-repeat bg-center bg-cover border"
+                                style={{
+                                  background: `url(${item.image}) no-repeat center/cover`,
+                                }}
+                              ></div>
+                              <h5>{item.country}</h5>
+                            </motion.div>
+                          </Link>
+                        ))}
+                      </div>
+                    </TabPanel>
+                  ))}
+                </TabsBody>
+              </Tabs>
+            </div>
+          </section>
+        </>
+      }
+    </>
   );
 };
 

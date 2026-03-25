@@ -23,36 +23,37 @@ import CounsellingForm from '../../Components/CounsellingForm';
 const data = {
 	programHighlights: [
 		'AI-Integrated Curriculum',
-		'Hands-on Live Campaigns & Real Projects',
+		'Hands-on Live Campaigns and Real Projects',
 		'5-Months Practical + 1-Month Internship',
-		'Portfolio Development & Certifications',
-		'Placement Assistance & Career Mentorship'
+		'Creative Design Training in Photoshop, Illustrator, CorelDRAW and Canva',
+		'Portfolio Development and Certifications',
+		'Placement Assistance and Career Mentorship'
 	],
 	modules: [
-		'Introduction to Digital Marketing & AI',
-		'Website Creation & Landing Page Optimization',
-		'Content Marketing & Copywriting',
-		'SEO & Keyword Research with AI Tools',
-		'SEM – Google Ads & Meta Ads',
-		'Social Media Marketing & AI Content Tools',
-		'Email Marketing & Marketing Automation',
-		'Influencer & Affiliate Marketing',
-		'Web Analytics & Performance Optimization',
-		'Capstone Project & Internship'
+		'Introduction to Digital Marketing and AI',
+		'Website Creation and Landing Page Optimization',
+		'Content Marketing and Copywriting',
+		'SEO and Keyword Research with AI Tools',
+		'SEM - Google Ads and Meta Ads',
+		'Social Media Marketing and AI Content Tools',
+		'Email Marketing and Marketing Automation',
+		'Influencer and Affiliate Marketing',
+		'Web Analytics and Performance Optimization',
+		'Capstone Project and Internship'
 	],
-	outcomes: 'By the end of this program, learners gain a complete digital portfolio, real-world client experience, and confidence to work in the marketing industry.',
+	outcomes: 'By the end of this program, learners gain a complete digital marketing and design portfolio, real-world client experience, and confidence to work in the marketing industry.',
 	whyUs: [
-		'AI-Integrated Curriculum: Learn to use AI tools that redefine marketing strategy and content creation.',
-		'Expert Mentorship: Get trained by experienced marketing professionals and digital strategists.',
-		'Real-Time Practice: Work on live client campaigns and analytics projects.',
+		'AI-Integrated Curriculum: Learn to use AI tools that redefine marketing strategy, content creation, and graphic design.',
+		'Expert Mentorship: Get trained by experienced marketing professionals, creative directors, and digital strategists.',
+		'Real-Time Practice:  Work on live client campaigns, design projects, and analytics tools.',
 		'Career-Focused Learning: Resume building, interview training, and placement support included.',
 		'Flexible Learning Modes: Online, offline, or hybrid options for your convenience.',
 		'Global Certifications: Receive recognized credentials to boost your career prospects.'
 	],
 	careerSupport: [
 		'1-Month Internship with Live Projects',
-		'Resume & LinkedIn Profile Optimization',
-		'Interview Coaching & Soft-Skill Training',
+		'Resume and LinkedIn Profile Optimization',
+		'Interview Coaching and Soft-Skill Training',
 		'Job Placement Assistance'
 	],
 	careerRoles: [
@@ -190,7 +191,7 @@ const DigitalMarketingAcademy = () => {
 							Empowering the Next Generation of AI-Driven Marketers
 						</h2>
 						<p className="text-lg text-slate-600 dark:text-slate-400 max-w-4xl mx-auto mb-10 leading-relaxed">
-							At Benchmark Educations LLP, we help learners master the digital world through innovation, creativity, and technology. We are a leading Digital Marketing Academy in Kerala & Chennai, offering programs that blend traditional marketing foundations with AI-powered digital tools.
+							Learn AI-powered digital marketing and creative design with hands-on projects, internship, and job-ready portfolio.
 						</p>
 						<div className="flex flex-wrap justify-center gap-4 text-lg font-semibold text-slate-700 dark:text-slate-300 mb-12">
 							<span className="flex items-center gap-2">
@@ -221,19 +222,19 @@ const DigitalMarketingAcademy = () => {
 				<div className="grid lg:grid-cols-2 gap-12 ">
 					<div>
 						<p className="text-lg text-slate-700 dark:text-slate-300 mb-6 leading-relaxed">
-							Benchmark Educations LLP is a premier institute focused on delivering industry-relevant, AI-integrated digital marketing education. Our programs are designed by marketing experts to combine strategic thinking, hands-on practice, and advanced tools that shape you into a job-ready digital professional.
+							 Benchmark Education’s AI-Integrated Digital Marketing & Creative Graphic Designing program combines cutting-edge AI tools with practical training in SEO, social media marketing, paid advertising, and creative design. Students gain real-world experience through live projects, portfolio development, and a structured internship.
 						</p>
 						<p className="text-lg text-slate-700 dark:text-slate-300 mb-8 leading-relaxed">
-							We believe in learning by doing — every learner works on live projects, campaigns, and analytics tools to gain real-world exposure.
+							The program equips learners with future-ready skills to excel in digital marketing, branding, and design roles globally.
 						</p>
 						<div className="space-y-6">
 							<div className="p-6 rounded-2xl bg-gradient-to-r from-indigo-500/10 to-fuchsia-500/10 border border-indigo-200 dark:border-indigo-800">
 								<h3 className="text-lg font-semibold text-slate-900 dark:text-white mb-2">Vision</h3>
-								<p className="text-slate-700 dark:text-slate-300">To build a generation of marketing innovators who drive growth using data, creativity, and technology.</p>
+								<p className="text-slate-700 dark:text-slate-300"> To empower students with AI-driven digital marketing and creative design skills, creating industry-ready professionals for global opportunities.</p>
 							</div>
 							<div className="p-6 rounded-2xl bg-gradient-to-r from-indigo-500/10 to-fuchsia-500/10 border border-indigo-200 dark:border-fuchsia-800">
 								<h3 className="text-lg font-semibold text-slate-900 dark:text-white mb-2">Mission</h3>
-								<p className="text-slate-700 dark:text-slate-300">To provide affordable, practical, and globally competitive digital marketing education powered by AI tools and modern learning methods.</p>
+								<p className="text-slate-700 dark:text-slate-300"> Deliver practical training, hands-on projects, and internships to build strong portfolios and future-ready skills in AI-powered marketing and design.</p>
 							</div>
 						</div>
 					</div>
@@ -245,17 +246,17 @@ const DigitalMarketingAcademy = () => {
 			</Section>
 
 			{/* Program Section */}
-			<Section id="program" title="Advanced AI-Integrated Digital Marketing Program – 6 Months" eyebrow="5 Months Practical + 1 Month Internship" className="bg-slate-100 dark:bg-slate-800/50">
+			<Section id="program" title="Redefining Digital Marketing and Creative Design with AI – 6 Months" eyebrow="5 Months Practical + 1 Month Internship" className="bg-slate-100 dark:bg-slate-800/50">
 				<div className="text-center mb-12">
 					<p className="text-lg text-slate-700 dark:text-slate-300 max-w-4xl mx-auto leading-relaxed">
-						A complete professional program that transforms you into a certified AI-powered digital marketer. This course covers all aspects of digital marketing, from fundamentals to advanced AI-driven analytics, helping you stay ahead in a data-driven business world.
+						A complete professional program that transforms you into a certified AI-powered digital marketer and creative designer. This course covers all aspects of digital marketing and graphic design, from fundamentals to advanced AI-driven analytics, helping you stay ahead in a data-driven business world. 
 					</p>
 				</div>
 				
 				<div className="grid md:grid-cols-3 gap-8 mb-12">
-					<FeatureCard icon={SparklesIcon} title="AI-Integrated" desc="Master cutting-edge AI tools for research, content, and optimization."/>
-					<FeatureCard icon={RocketLaunchIcon} title="Live Projects" desc="Run real campaigns and build a job-ready portfolio with impact."/>
-					<FeatureCard icon={AcademicCapIcon} title="Internship + Mentors" desc="Work with mentors, gain internship exposure and interview guidance."/>
+					<FeatureCard icon={SparklesIcon} title="AI-Integrated" desc="Master cutting-edge AI tools for research, content creation, and design optimization."/>
+					<FeatureCard icon={RocketLaunchIcon} title="Live Projects" desc="Run real campaigns, create real designs, and build a job-ready portfolio with impact."/>
+					<FeatureCard icon={AcademicCapIcon} title="Internship and Mentors" desc="Work with mentors, gain internship exposure, and receive interview guidance."/>
 				</div>
 
 				<div className="rounded-3xl p-1 bg-gradient-to-r from-indigo-500 via-fuchsia-500 to-cyan-500">
@@ -306,7 +307,7 @@ const DigitalMarketingAcademy = () => {
 			<Section title="Internship & Career Development" eyebrow="Launch your career">
 				<div className="text-left mb-8">
 					<p className="text-lg text-slate-700 dark:text-slate-300 max-w-4xl leading-relaxed">
-						At Benchmark Educations, we don't just teach — we help you launch your career. Our Career Development Cell ensures every student gains real-world exposure and placement opportunities in leading firms.
+						At Benchmark Educations, we don't just teach. We help you launch your career. Our Career Development Cell ensures every student gains real-world exposure and placement opportunities in leading firms.
 					</p>
 				</div>
 				

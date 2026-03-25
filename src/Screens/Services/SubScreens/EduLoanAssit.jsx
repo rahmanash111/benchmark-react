@@ -18,14 +18,14 @@ const EduLoanAssit = () => {
             {
                 "id": "7.1",
                 "title": "Secure Funding for Your Education",
-                "description": "Many students rely on educational loans to fund their studies abroad, and we provide expert assistance in navigating the loan process. We work with leading banks and financial institutions to help you secure the necessary funding, ensuring that all paperwork is completed and approvals are processed smoothly.",
+                "description": "Our education loan assistance helps students access reliable funding through trusted banks and financial institutions. We guide you through eligibility, documentation, and application processes, ensuring a smooth experience while securing the required financial support for your academic journey without unnecessary delays.",
                 "icon": CurrencyDollarIcon,
                 "bgColor": "#D1C4E9"
             },
             {
                 "id": "7.2",
                 "title": "Customized Loan Solutions",
-                "description": "Our team helps you find loan programs tailored to your financial situation and repayment capabilities, ensuring that you have a clear plan for financing your education.",
+                "description": "We offer student loan services tailored to your financial profile, repayment capacity, and course requirements. Our experts help you compare lenders, interest rates, and repayment options, ensuring you choose a plan that supports your education goals without creating financial stress in future.",
                 "icon": BanknotesIcon,
                 "bgColor": "#FFCCBC"
             },
@@ -41,21 +41,21 @@ const EduLoanAssit = () => {
             {
                 "id": "7.4",
                 "title": "Loan Application Support",
-                "description": "Assist with completing loan applications and gathering required documents such as income proof, collateral, and admission letters.",
+                "description": "Get expert education loan assistance for application, documentation, eligibility checks, and accurate submission without delays.",
                 "icon": DocumentArrowUpIcon,
                 "bgColor": "#FFF3E0"
             },
             {
                 "id": "7.5",
                 "title": "Bank Coordination",
-                "description": "Liaise with banks and financial institutions to facilitate the loan approval process.",
+                "description": "We handle student loan processing by coordinating with banks to ensure smooth approval and faster response.",
                 "icon": UserCircleIcon,
                 "bgColor": "#FFCDD2"
             },
             {
                 "id": "7.6",
                 "title": "Loan Disbursement",
-                "description": "Ensure timely disbursement of funds for tuition, living expenses, and other associated costs.",
+                "description": "Ensure timely loan disbursement support for tuition fees, living expenses, and complete financial coverage.",
                 "icon": BanknotesIcon,
                 "bgColor": "#E8F5E9"
             }

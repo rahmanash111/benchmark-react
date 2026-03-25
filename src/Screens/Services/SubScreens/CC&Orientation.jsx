@@ -21,9 +21,9 @@ const CCAndOrientation = () => {
     sections: [
       {
         id: "1.1",
-        title: "Personalized Guidance for Career and Education",
+        title: "Career & Course Orientation",
         description:
-          "Making the right career and course decision is critical for long-term success. Our counsellors offer personalized guidance based on an in-depth understanding of your interests, skills, and aspirations. This process begins with an assessment of your strengths, academic history, and career objectives, followed by expert recommendations for courses and career paths that align with your goals.",
+          "Making the right academic decision requires expert student career planning and personalized education guidance services. Benchmark Education evaluates interests, strengths, and long-term goals to recommend suitable courses and professional pathways, helping individuals make confident decisions for future growth.",
         icon: UserCircleIcon,
         bgColor: "#FFCDD2",
       },
@@ -31,7 +31,7 @@ const CCAndOrientation = () => {
         id: "1.2",
         title: "Global University Network",
         description:
-          "With our strong partnerships with over 200 top-tier universities worldwide, we provide detailed insights into various programs across multiple disciplines. Whether you’re interested in science, engineering, arts, or business, we help you navigate the complex world of higher education to find the ideal university and course.",
+          "Through partnerships with leading institutions, Benchmark Education offers access to diverse international universities and trusted overseas education programs. Our team provides insights into disciplines like technology, management, arts, and science while helping choose institutions aligned with academic ambitions.",
         icon: GlobeAltIcon,
         bgColor: "#BBDEFB",
       },
@@ -39,7 +39,7 @@ const CCAndOrientation = () => {
         id: "1.3",
         title: "Comprehensive Support",
         description:
-          "We provide ongoing support throughout the application process, including preparing documents, filling out forms, and meeting specific university requirements. Our counsellors will ensure you select a program that enhances your skills, improves employability, and fits your personal and academic profile.",
+          "Benchmark Education ensures a smooth journey with reliable college admission assistance and expert application guidance services. From preparing academic documents to meeting university requirements, our team supports every step while helping applicants choose programs that improve career opportunities and global exposure.",
         icon: DocumentCheckIcon,
         bgColor: "#C8E6C9",
       },
@@ -49,7 +49,7 @@ const CCAndOrientation = () => {
         id: "1.4",
         title: "Initial Consultation",
         description:
-          "An in-depth conversation about your background, interests, and career goals.",
+          "Start with a detailed discussion about goals, interests, and opportunities in digital marketing training and online marketing skills.",
         icon: ChatBubbleLeftIcon,
         bgColor: "#FFF9C4",
       },
@@ -57,7 +57,7 @@ const CCAndOrientation = () => {
         id: "1.5",
         title: "Interest and Skill Assessment",
         description:
-          "A thorough evaluation of your academic qualifications and personal strengths to help guide the course and career selection process.",
+          "Evaluate qualifications and strengths to identify suitable BVoc programs and practical skill-based education opportunities.",
         icon: IdentificationIcon,
         bgColor: "#F0F4C3",
       },
@@ -65,7 +65,7 @@ const CCAndOrientation = () => {
         id: "1.6",
         title: "Program Recommendations",
         description:
-          "Curated list of universities and programs based on your profile and career aspirations.",
+          "Receive tailored suggestions for nursing training programs and healthcare career courses matching qualifications and professional aspirations.",
         icon: ClipboardDocumentCheckIcon,
         bgColor: "#FFE0B2",
       },
@@ -73,7 +73,7 @@ const CCAndOrientation = () => {
         id: "1.7",
         title: "Application Strategy",
         description:
-          "Guidance on how to approach applications, deadlines, and course-specific requirements.",
+          "Get expert guidance for applying to MBA programs abroad with structured planning, documentation support, and admission preparation.",
         icon: CalendarIcon,
         bgColor: "#D1C4E9",
       },

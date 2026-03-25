@@ -347,7 +347,7 @@ const Footer = () => {
         </div>
         <div>
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.673003822938!2d80.25470147409763!3d13.056474137266775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a526700181d6829%3A0xf67714a160ae1be3!2sOffisbay!5e0!3m2!1sen!2sin!4v1730002270098!5m2!1sen!2sin"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d153085.7302461338!2d80.17118182966374!3d12.97878697264739!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a525df69e94911d%3A0x41a0d5101c99685d!2sBenchmark%20Education!5e1!3m2!1sen!2sin!4v1774073218537!5m2!1sen!2sin" 
             width="100%"
             height="100%"
             className="h-[550px]"

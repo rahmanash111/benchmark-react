@@ -8,19 +8,19 @@ import TravelDeskImg from '../../../assets/Services/traveldesk.webp'
 const TravelDesk = () => {
     const data ={
         "id": "8",
-        "heading": "Travel Desk & Accommodation",
+        "heading": "Travel Desk & Accommodation Support for Students",
         "sections": [
           {
             "id": "8.1",
             "title": "Hassle-Free Travel Arrangements",
-            "description": "Our travel desk provides assistance with booking flights, arranging airport transfers, and handling any other travel-related needs to ensure that your journey to your study destination is smooth and stress-free.",
+            "description": "Our travel booking assistance ensures smooth journey planning with flight reservations, airport pickup services, and travel coordination support. We handle every detail efficiently, helping you avoid last-minute stress and ensuring a comfortable, well-organized travel experience from departure to destination.",
             "icon": PaperAirplaneIcon,
             "bgColor": "#FFEBEE"
           },
           {
             "id": "8.2",
             "title": "Accommodation Solutions",
-            "description": "We help you find safe and affordable accommodation options near your university, whether it’s student housing, private rentals, or homestays. Our team works with trusted partners to provide reliable housing options that suit your budget and preferences.",
+            "description": "We provide student accommodation services to help you find safe housing options, including student housing, private apartments, and homestays. Our team ensures budget-friendly choices with verified listings, offering comfort, convenience, and proximity to your university for a better living experience.",
             "icon": HomeIcon,
             "bgColor": "#FFCCBC"
           }
@@ -29,21 +29,21 @@ const TravelDesk = () => {
           {
             "id": "8.1",
             "title": "Flight Bookings",
-            "description": "Help with booking flights at competitive rates.",
+            "description": "Get affordable flight booking assistance with best airfare deals, flexible options, and confirmed reservations.",
             "icon": PaperAirplaneIcon,
             "bgColor": "#FFDDC1"
           },
           {
             "id": "8.2",
             "title": "Airport Transfers",
-            "description": "Arrange smooth transportation from the airport to your accommodation.",
+            "description": "Enjoy smooth airport transfer service with reliable pickup, drop facilities, and comfortable transportation arrangements.",
             "icon": ArrowRightIcon,
             "bgColor": "#FFEB3B"
           },
           {
             "id": "8.3",
             "title": "Accommodation Search",
-            "description": "Assist with finding housing that fits your needs and budget.",
+            "description": "Find ideal housing through student housing support with verified options matching budget, location, and preferences.",
             "icon": HomeIcon,
             "bgColor": "#C8E6C9"
           }

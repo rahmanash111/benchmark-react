@@ -6,10 +6,10 @@ import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter } from "react-router-dom";
 import { ApolloProvider, ApolloClient, InMemoryCache } from "@apollo/client";
 import { ThemeProvider } from "@material-tailwind/react";
-
+const apiUrl = process.env.REACT_APP_GRAPHQL_API_URL;
 
 const client = new ApolloClient({
-  uri: "https://benchmark-backend.ideassionlive.in/graphql",
+  uri: apiUrl,
   cache: new InMemoryCache()
 });
 

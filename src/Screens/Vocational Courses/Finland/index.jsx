@@ -253,76 +253,76 @@ const data = {
       {
         title: "Practical Job-Ready Training",
         description:
-          "Gain real-world skills that employers value, making you job-ready from day one.",
+          "Build job-ready skills Finland through hands-on training aligned with real industry requirements and roles.",
       },
       {
         title: "Work with Advanced Technologies",
         description:
-          "Learn in state-of-the-art facilities, preparing you for the cutting-edge industries of tomorrow.",
+          "Learn using advanced technology training Finland in modern labs for future-focused careers and innovation.",
       },
       {
         title: "Industry-Recognized Certifications",
         description:
-          "Earn internationally respected qualifications that open doors across the globe.",
+          "Earn international certifications Finland valued by global employers across multiple industries and career paths.",
       },
       {
         title: "High-Quality Education",
         description:
-          "Finland is renowned for its education system, providing top-tier vocational training.",
+          "Experience Finland education system known for quality training, innovation, and student-focused learning approaches.",
       },
       {
-        title: "Pathway to Finnish Employment",
+        title: "Pathway to Finish Employment",
         description:
-          "Benefit from Finland’s strong job market and access career opportunities upon course completion.",
+          "Access jobs in Finland for students with strong career opportunities after completing your vocational course.",
       },
       {
         title: "Flexible Learning Options",
         description:
-          "Full-time, part-time, and online learning to suit your needs.",
+          "Choose flexible study Finland with full-time, part-time, or online learning options for convenience.",
       },
       {
         title: "Visa Support and Post-Study Opportunities",
         description:
-          "Get assistance with student visas and explore post-study work options in Finland.",
+          "Get Finland student visa support and explore post-study work opportunities after course completion.",
       },
     ],
   },
   visa_support: {
     title: "Study in Finland with Visa and Work Benefits",
     description:
-      "Considering studying in Finland? Our vocational courses not only help you build a promising career but also come with visa support.",
+      "Begin your journey with study in Finland programs offering career growth, visa support, and global opportunities.",
     work_options: [
       {
         title: "Student Visa",
         description:
-          "Enroll in eligible vocational courses and obtain a student visa for the duration of your studies.",
+          "Apply for a Finland student visa easily through eligible vocational courses and start your education journey.",
       },
       {
         title: "Work While Studying",
         description:
-          "Students are allowed to work up to 25 hours per week during the academic term and full-time during holidays.",
+          "Earn with work in Finland for students, allowing part-time jobs during studies and full-time during holidays.",
       },
       {
         title: "Post-Study Work Options",
         description:
-          "Once you complete your vocational training, you can apply for a post-study visa, allowing you to stay and work in Finland for up to two years.",
+          "Stay longer with post-study work Finland, gaining experience and building a strong international career after graduation.",
       },
     ],
   },
   spousal_benefits: {
     title: "Spousal Benefits",
     description:
-      "Your spouse or partner can apply for a dependent visa and accompany you during your stay.",
+      "Bring your partner with Finland dependent visa options and enjoy family support during your studies abroad.",
     work_eligibility: [
       {
         title: "Dependent Visa",
         description:
-          "Your spouse or partner can apply for a dependent visa and accompany you during your stay.",
+          "Apply for a dependent visa Finland to live together while pursuing your education and career goals.",
       },
       {
         title: "Work Eligibility",
         description:
-          "Spouses of students often have the right to work in Finland, making it easier to support your family while you study.",
+          "Spouses can work with spouse work permit Finland, supporting family income during your study period abroad.",
       },
     ],
   },
@@ -346,7 +346,7 @@ const VocationalCoursesFinland = () => {
         <div className="h-[138px] w-full flex flex-row items-center justify-center relative">
           <div className="container w-[90%] z-10">
             <h2 className="text-[1.5rem] md:text-[2.5rem] lg:text-[3rem]  font-bold text-left text-white capitalize">
-              Vocational Courses in Finland
+              Vocational Courses in the Finland <br /> with Benchmark Education 
             </h2>
 
             <ul className="flex flex-row space-x-2 h-fit py-2 items-center bg-white rounded-md capitalize w-fit px-5 font-semibold ">
@@ -373,7 +373,7 @@ const VocationalCoursesFinland = () => {
         <div className=" w-[90%] h-full font-Jakarta grid grid-cols-1 lg:grid-cols-2 place-items-center  ">
           <div className="flex flex-col space-y-5 w-full">
             <p className="font-bold text-[16px] animate-fadein text-center lg:text-left text-primary">
-              Transform Your Career with UK Vocational Courses
+              Transform Your Career with Finland Vocational Courses
             </p>
             <motion.p
               initial={{ opacity: 0, translateY: 100 }}
@@ -382,10 +382,9 @@ const VocationalCoursesFinland = () => {
               transition={{ ease: "easeInOut", duration: 0.5 }}
               className="text-center lg:text-left xl:text-left md:text-left text-[1.3rem]  w-full  leading-snug "
             >
-              Take the next step in your professional journey! Our
-              industry-leading vocational courses in the UK offer hands-on
-              training and recognized certifications, designed to help you
-              succeed in the beauty, wellness, and holistic industries.
+              Advance your future with Finland vocational courses offering practical training, global certifications, 
+              and strong career opportunities in beauty, wellness, and holistic industries through industry-focused
+              vocational training Finland programs.
             </motion.p>
           </div>
           <div className="h-full w-full ">
@@ -454,10 +453,10 @@ const VocationalCoursesFinland = () => {
             transition={{ ease: "linear", duration: 0.8 }}
             className="text-[30px] lg:text-[50px] md:text-[50px] leading-snug font-semibold z-20 text-center"
           >
-            Thinking about studying in the UK?
+            Study in Finland with Career Opportunities
           </motion.h2>
           <p className="text-text text-center text-[16px]">
-            Our vocational courses can help you with your visa application:
+            Start your journey with Finland study visa support and clear career pathways after graduation.
           </p>
           <div className="grid grid-cols-1 lg:grid-cols-2 md:grid-cols-2 gap-5">
             <motion.div
@@ -471,8 +470,7 @@ const VocationalCoursesFinland = () => {
                 <CheckBadgeIcon className="h-8 w-8 fill-primary" />
                 <h3 className="font-bold">Post-Study Work Opportunities</h3>
                 <p>
-                  Stay in the UK after you finish your course with a Graduate
-                  Route visa, allowing you to work for up to two years.
+                  Stay back with post-study work Finland, gaining valuable experience after completing your course.
                 </p>
               </div>
             </motion.div>
@@ -487,8 +485,7 @@ const VocationalCoursesFinland = () => {
                 <CheckBadgeIcon className="h-8 w-8 fill-primary" />
                 <h3 className="font-bold">Skilled Worker Visa</h3>
                 <p>
-                  Once you’ve completed your training, you may qualify for a job
-                  with a UK-based company and apply for a Skilled Worker Visa.
+                  Apply through Finland skilled worker visa to secure long-term career opportunities abroad.
                 </p>
               </div>
             </motion.div>

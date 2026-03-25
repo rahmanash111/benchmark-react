@@ -21,6 +21,18 @@ import {
   PauseCircleIcon,
 } from "@heroicons/react/24/solid";
 import HeroIMG from "../../assets/Images/bg.webp";
+import bannermobile1 from "../../assets/hero/bannerformobile copy.webp";
+import bannermobile2 from "../../assets/hero/bannerformobile.webp";
+import bannermobile3 from "../../assets/hero/bannerformobileBVoc.webp";
+import bannermobile4 from "../../assets/hero/bannerformobiledigitalmarketing.webp";
+import bannermobile5 from "../../assets/hero/mbamobile.webp";
+
+
+import banner1 from "../../assets/hero/banner 1.webp";
+import banner2 from "../../assets/hero/banner 2nursing entry.webp";
+import banner3 from "../../assets/hero/banner bvoc.webp";
+import banner4 from "../../assets/hero/banner digital.webp";
+import banner5 from "../../assets/hero/banner MBA Banner.webp";
 import partner1 from "../../assets/Images/partner1.webp";
 import partner2 from "../../assets/Images/partner2.webp";
 import partner3 from "../../assets/Images/partner3.webp";
@@ -106,8 +118,11 @@ import gsap from "gsap";
 import DigitalMarketingAcdmy from '../../assets/Images/DigitalMarketingAcdmy.jpg'
 import StudyAbroadImg3 from "../../assets/Images/bg5.jpg";
 import digitalMarketingImg from "../../assets/Images/digitalMarketingImg.webp";
+import digitalMarketingImgBvoc from "../../assets/hero/B.Voc.webp";
 import admission from "../../assets/Services/admission.webp";
 import EduJobFair from '../../assets/Images/EduJobFair.svg'
+import CourseSlider from "./CourseSlider";
+const graphqlBaseUrl = process.env.REACT_APP_GRAPHQL_API_URL.replace('/graphql', '');
 
 const Home = () => {
   let sliderRef = useRef(null);
@@ -272,16 +287,6 @@ const Home = () => {
       aboutdescription5:
         "Praveena has a good understanding of different work cultures and the power of collaboration, having worked with people from different nationalities and walks of life. She has a rich experience of over two decades in India, UAE and Kuwait. <br/> Given her spare time, Praveena enjoys training students aspiring to write their IELTS/GRE/CAT exams or seeking to improve their level of communicative English. Praveena aspires to inspire young learners and teachers through fun-filled, interactive and engaging sessions that focus on lifelong learning, empathy, inclusiveness, creativity and a deep sense of responsibility.",
       image: T1,
-    },
-    {
-      id: 2,
-      name: "Mitali Saraswat",
-      role: "Mentor - CCT College Dublin (South Asia)",
-      designation: "CCT College Dublin (South Asia)",
-      twitter: "/",
-      instagram: "/",
-      linkedin: "/",
-      image: T2,
     },
     {
       id: 3,
@@ -750,7 +755,7 @@ const Home = () => {
     if (location.pathname === "/") {
       const timer = setTimeout(() => {
         setOpenForm(true);
-      }, 30000);
+      }, 3000);
 
       return () => clearTimeout(timer);
     }
@@ -800,6 +805,19 @@ const Home = () => {
     section2.current?.scrollIntoView({ behavior: "smooth" });
   };
 
+  const heroSettings = {
+    infinite: true,
+    speed: 800,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    arrows: true,
+    fade: true,
+    dots: false,
+    pauseOnHover: false
+  };
+
   useEffect(() => {
     gsap.to(boxRef.current, {
       y: 10,
@@ -809,90 +827,28 @@ const Home = () => {
       ease: "power1.inOut",
     });
   }, []);
+  const images = isLargeScreen ? [banner1, banner2, banner3, banner4, banner5] : [bannermobile1, bannermobile2, bannermobile3, bannermobile4, bannermobile5]
 
   return (
-    <>
+    <div className="overflow-hidden">
       <Helmet>
         <title>BenchMark Educations</title>
       </Helmet>
 
       <CounsellingForm isopenForm={openform} setOpenForm={setOpenForm} />
 
-      <section
-        className="min-h-[80vh] flex flex-col items-center justify-center "
-        style={{
-          backgroundImage: isLargeScreen ? `url(${HeroIMG})` : "none",
-          backgroundSize: "contain",
-          backgroundPosition: "right",
-          backgroundRepeat: "no-repeat",
-        }}
-      >
-        <div className=" w-[90%] h-full font-Jakarta grid lg:grid-cols-2 grid-cols-1 gap-2">
-          <div className="flex flex-col gap-8 justify-center">
-            <p className="font-semibold text-[20px] animate-fadein text-center lg:text-left">
-              Benchmark Education
-            </p>
-            <motion.h2
-              initial={{ opacity: 0, translateY: 50 }}
-              whileInView={{ opacity: 1, translateY: 0 }}
-              viewport={{ once: true }}
-              transition={{ ease: "easeInOut", duration: 0.8 }}
-              className="text-center lg:text-left xl:text-left md:text-left text-4xl md:text-7xl  leading-snug font-bold"
-
-            >
-              <span className="text-primary">Padhega</span> India <br />{" "}
-              <span className="text-primary">Badhega</span> India
-            </motion.h2>
-
-            <ul className="flex flex-col space-y-2 items-start justify-start text-[18px] font-medium animate-fadein">
-              <li className="flex flex-row space-x-2 ">
-                {" "}
-                <CheckIcon className="h-5 w-5 fill-primary" /> Explore
-                prestigious universities worldwide.
-              </li>
-              <li className="flex flex-row space-x-2 ">
-                {" "}
-                <CheckIcon className="h-5 w-5 fill-primary" />
-                Expert guidance on educational planning and admissions.
-              </li>
-              <li className="flex flex-row space-x-2">
-                {" "}
-                <CheckIcon className="h-5 w-5 fill-primary" /> Accredited
-                programs and partnerships with top institutions.
-              </li>
-            </ul>
-            <div className="font-Jakarta text-[14px] lg:text-[16px] md:text-[16px] flex flex-row space-x-10 items-center">
-              <motion.button
-                onClick={() => setOpenForm(true)}
-                initial={{ opacity: 0, translateY: 20 }}
-                whileInView={{ opacity: 1, translateY: 0 }}
-                viewport={{ once: true }}
-                transition={{ ease: "easeInOut", duration: 0.8 }}
-                className="px-3 py-2 lg:px-10 lg:py-5 md:px-5 md:py-5 text-[0.9rem] text-center bg-primary text-white hover:bg-secondary rounded-lg font-medium"
-              >
-                Book Appointment
-              </motion.button>
-              <motion.a
-                onClick={scrollToBottom}
-                initial={{ opacity: 0, translateY: 20 }}
-                whileInView={{ opacity: 1, translateY: 0 }}
-                viewport={{ once: true }}
-                transition={{ ease: "easeInOut", duration: 0.8 }}
-                className="px-3 py-2 lg:px-10 lg:py-5 md:px-5 md:py-5 text-[0.9rem] text-center bg-white text-black hover:text-white hover:border-0 border-2 border-dashed border-gray-500 hover:bg-primary rounded-lg font-medium"
-              >
-                Start Your Journey
-              </motion.a>
-            </div>
-          </div>
-          <div className="h-full w-full ">
-            {!isLargeScreen && (
+      <section className="relative overflow-hidden h-auto md:min-h-[80vh] flex items-center justify-center box-border">
+        <div className="w-full h-full">
+          <Slider {...heroSettings}>
+            {images?.map((src, idx) => (
               <img
-                src={HeroIMG}
-                alt=""
-                className="h-full w-full object-contain "
+                key={idx}
+                src={src}
+                alt={`banner ${idx + 1}`}
+                className="banner-img object-contain"
               />
-            )}
-          </div>
+            ))}
+          </Slider>
         </div>
       </section>
 
@@ -907,181 +863,234 @@ const Home = () => {
           <button className="apply-now-btn" onClick={() => window.open('https://forms.gle/AXTJSFqAS5WH8adG9', '_blank')}>Apply Now</button>
         </div> */}
       </section>
+      <CourseSlider />
+
+      <section className="my-16 w-full flex justify-center items-center bg-gradient-to-r from-[#fafafa] via-[#f3f4f6] to-[#e5e7eb] py-12 md:py-16">
+        <div className="w-[90%] max-w-7xl flex flex-col md:flex-row items-center justify-between gap-10 font-Jakarta">
+          {/* LEFT IMAGE */}
+          <motion.div
+            initial={{ opacity: 0, x: 60 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ ease: "easeInOut", duration: 0.8 }}
+            className="relative w-full md:w-1/2 overflow-hidden shadow-xl group rounded-2xl"
+          >
+            <img
+              src={digitalMarketingImgBvoc}
+              alt="Digital Marketing Academy"
+              className="w-full h-[320px] md:h-[420px] object-cover transform group-hover:scale-105 transition-transform duration-500"
+            />
+            <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition duration-500"></div>
+          </motion.div>
+
+          {/* RIGHT CONTENT */}
+          <motion.div
+          
+            initial={{ opacity: 0, x: 60 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ ease: "easeInOut", duration: 0.8 }}
+            className="flex flex-col space-y-6 text-center md:text-left max-w-xl"
+          >
+            <h2 className="text-4xl md:text-5xl font-semibold leading-tight">
+              Diploma in Digital Marketing
+            </h2>
+
+            <p className="text-[16px] md:text-[18px] text-text leading-relaxed">
+              Benchmark Education offers a comprehensive diploma in digital marketing designed to build practical skills in SEO, social media marketing, content marketing, and online advertising. Our digital marketing course focuses on real-world training, industry tools, and expert guidance to help students gain job-ready skills and grow confidently in today’s competitive digital marketing industry with hands-on learning and career-focused support. 
+            </p>
+
+            <div className="flex flex-col space-y-3">
+              <p className="text-[14px] md:text-[16px] text-text leading-relaxed font-medium">
+                <span className="text-primary">New Add-ons:</span> Neuro Digital Marketing, Advanced Excel, and Web Development modules now available!
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 sm:justify-start justify-center">
+                <Link
+                  to="/digital-marketing-academy"
+                  className="inline-block bg-primary hover:bg-secondary text-white px-6 py-3 rounded-lg text-base font-medium shadow-lg transition-colors duration-300"
+                >
+                  Explore Course
+                </Link>
+              </div>
+            </div>
+          </motion.div>
+        </div>
+      </section>
 
       <section className="my-16 w-full flex justify-center items-center bg-gradient-to-r from-[#fafafa] via-[#f3f4f6] to-[#e5e7eb] py-12 md:py-16">
 
-      <div className="w-[90%] max-w-7xl flex flex-col md:flex-row items-center justify-between gap-10 font-Jakarta">
-        
-        {/* LEFT IMAGE */}
-        <motion.div
-          initial={{ opacity: 0, x: -60 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: true }}
-          transition={{ ease: "easeInOut", duration: 0.8 }}
-          className="relative w-full md:w-1/2 overflow-hidden shadow-xl group rounded-2xl"
-        >
-          <img
-            src={digitalMarketingImg}
-            alt="Digital Marketing Academy"
-            className="w-full h-[320px] md:h-[420px] object-cover transform group-hover:scale-105 transition-transform duration-500"
-          />
-          <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition duration-500"></div>
-        </motion.div>
+        <div className="w-[90%] max-w-7xl flex flex-col md:flex-row items-center justify-between gap-10 font-Jakarta">
 
-        {/* RIGHT CONTENT */}
-        <motion.div
-          initial={{ opacity: 0, x: 60 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: true }}
-          transition={{ ease: "easeInOut", duration: 0.8 }}
-          className="flex flex-col space-y-6 text-center md:text-left max-w-xl"
-        >
-          <h2 className="text-4xl md:text-5xl font-semibold leading-tight">
-            Best Institute for Digital Marketing
-          </h2>
+          {/* LEFT IMAGE */}
+          <motion.div
+            initial={{ opacity: 0, x: -60 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ ease: "easeInOut", duration: 0.8 }}
+            className="relative w-full md:w-1/2 overflow-hidden shadow-xl group rounded-2xl"
+          >
+            <img
+              src={digitalMarketingImg}
+              alt="Digital Marketing Academy"
+              className="w-full h-[320px] md:h-[420px] object-cover transform group-hover:scale-105 transition-transform duration-500"
+            />
+            <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition duration-500"></div>
+          </motion.div>
 
-          <p className="text-[16px] md:text-[18px] text-text leading-relaxed">
-            Benchmark Education is one of the best institutes for digital marketing,
-             offering comprehensive training designed for beginners and professionals. 
-             Expert trainers focus on practical learning in SEO, social media marketing,
-              content marketing, and online advertising. With an industry-relevant curriculum and hands-on projects, 
-              the program builds strong skills and confidence to succeed in today’s fast-growing digital marketing industry.  
+          {/* RIGHT CONTENT */}
+          <motion.div
+            initial={{ opacity: 0, x: 60 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ ease: "easeInOut", duration: 0.8 }}
+            className="flex flex-col space-y-6 text-center md:text-left max-w-xl"
+          >
+            <h2 className="text-4xl md:text-5xl font-semibold leading-tight">
+              B.Voc Digital Marketing Degree Program
+            </h2>
 
-          </p>
+            <p className="text-[16px] md:text-[18px] text-text leading-relaxed">
+              Benchmark Education is one of the best institutes for digital marketing,
+              offering comprehensive training designed for beginners and professionals.
+              Expert trainers focus on practical learning in SEO, social media marketing,
+              content marketing, and online advertising. With an industry-relevant curriculum and hands-on projects,
+              the program builds strong skills and confidence to succeed in today’s fast-growing digital marketing industry.
 
-          <div className="flex flex-col space-y-3">
-            <p className="text-[14px] md:text-[16px] text-text leading-relaxed font-medium">
-              <span className="text-primary">New Add-ons:</span> Neuro Digital Marketing, Advanced Excel, and Web Development modules now available!
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 sm:justify-start justify-center">
-              <Link
-                to="/digital-marketing-academy"
-                className="inline-block bg-primary hover:bg-secondary text-white px-6 py-3 rounded-lg text-base font-medium shadow-lg transition-colors duration-300"
-              >
-                Explore Course
-              </Link>
+
+            <div className="flex flex-col space-y-3">
+              <p className="text-[14px] md:text-[16px] text-text leading-relaxed font-medium">
+                <span className="text-primary">New Add-ons:</span> Neuro Digital Marketing, Advanced Excel, and Web Development modules now available!
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 sm:justify-start justify-center">
+                <Link
+                  to="/digital-marketing-academy"
+                  className="inline-block bg-primary hover:bg-secondary text-white px-6 py-3 rounded-lg text-base font-medium shadow-lg transition-colors duration-300"
+                >
+                  Explore Course
+                </Link>
+              </div>
             </div>
-          </div>
-        </motion.div>
-      </div>
-    </section>
+          </motion.div>
+        </div>
+      </section>
 
       {/* Study Abroad CTA Section */}
       <section className="my-16 w-full flex justify-center items-center bg-gradient-to-r from-blue-50 via-white to-purple-50 py-12 md:py-16">
 
-      <div className="w-[90%] max-w-7xl flex flex-col md:flex-row items-center justify-between gap-10 font-Jakarta">
-        
-        {/* LEFT CONTENT */}
-        <motion.div
-          initial={{ opacity: 0, x: -60 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: true }}
-          transition={{ ease: "easeInOut", duration: 0.8 }}
-          className="flex flex-col space-y-6 text-center md:text-left max-w-xl"
-        >
-          <h2 className="text-4xl md:text-5xl font-semibold leading-tight">
-            Study Abroad
-          </h2>
+        <div className="w-[90%] max-w-7xl flex flex-col md:flex-row items-center justify-between gap-10 font-Jakarta">
 
-          <p className="text-[16px] md:text-[18px] text-text leading-relaxed">
-            Benchmark Education offers expert guidance for study abroad programs, 
-            helping individuals choose the right country, university, and course. 
-            From application support and documentation to visa assistance, 
-            every step is handled with professional care. With trusted advice and updated information, 
-            the process becomes simple and clear for those planning to pursue higher education in leading international destinations.
+          {/* LEFT CONTENT */}
+          <motion.div
+            initial={{ opacity: 0, x: -60 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ ease: "easeInOut", duration: 0.8 }}
+            className="flex flex-col space-y-6 text-center md:text-left max-w-xl"
+          >
+            <h2 className="text-4xl md:text-5xl font-semibold leading-tight">
+              Study Abroad
+            </h2>
 
-          </p>
+            <p className="text-[16px] md:text-[18px] text-text leading-relaxed">
+              Benchmark Education offers expert guidance for study abroad programs,
+              helping individuals choose the right country, university, and course.
+              From application support and documentation to visa assistance,
+              every step is handled with professional care. With trusted advice and updated information,
+              the process becomes simple and clear for those planning to pursue higher education in leading international destinations.
 
-          <div>
-            <Link
-              to="/study-abroad"
-              className="inline-block bg-primary hover:bg-secondary text-white px-6 py-3 rounded-lg text-base font-medium shadow-lg transition-colors duration-300"
-            >
-              Explore Study Abroad
-            </Link>
-          </div>
-        </motion.div>
+            </p>
 
-        {/* RIGHT IMAGE */}
-        <motion.div
-          initial={{ opacity: 0, x: 60 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: true }}
-          transition={{ ease: "easeInOut", duration: 0.8 }}
-          // style={{borderRadius:'0 20px 20px 0'}}
-          className="relative w-full md:w-1/2 rounded-2xl overflow-hidden shadow-xl group"
-        >
-          <img
-            src={StudyAbroadImg3}
-            alt="Study Abroad"
-            className="w-full h-[320px] md:h-[420px] object-cover "
-          />
-          <div className="absolute inset-0 bg-black/10"></div>
-        </motion.div>
-      </div>
-    </section>
+            <div>
+              <Link
+                to="/study-abroad"
+                className="inline-block bg-primary hover:bg-secondary text-white px-6 py-3 rounded-lg text-base font-medium shadow-lg transition-colors duration-300"
+              >
+                Explore Study Abroad
+              </Link>
+            </div>
+          </motion.div>
 
-    {/* Study In India CTA Section */}
-    <section className="my-16 w-full flex justify-center items-center bg-gray-50 py-12 md:py-16">
-      <div className="w-[90%] max-w-7xl flex flex-col md:flex-row items-center justify-between gap-10 font-Jakarta">
-        
-        {/* LEFT IMAGE */}
-        <motion.div
-          initial={{ opacity: 0, x: -60 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: true }}
-          transition={{ ease: "easeInOut", duration: 0.8 }}
-          className="relative w-full md:w-1/2 overflow-hidden shadow-xl group rounded-2xl"
-        >
-          <img
-            src={admission}
-            alt="Study in India"
-            className="w-full h-[320px] md:h-[420px] object-cover transform group-hover:scale-105 transition-transform duration-500"
-          />
-          <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition duration-500"></div>
-        </motion.div>
+          {/* RIGHT IMAGE */}
+          <motion.div
+            initial={{ opacity: 0, x: 60 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ ease: "easeInOut", duration: 0.8 }}
+            // style={{borderRadius:'0 20px 20px 0'}}
+            className="relative w-full md:w-1/2 rounded-2xl overflow-hidden shadow-xl group"
+          >
+            <img
+              src={StudyAbroadImg3}
+              alt="Study Abroad"
+              className="w-full h-[320px] md:h-[420px] object-cover "
+            />
+            <div className="absolute inset-0 bg-black/10"></div>
+          </motion.div>
+        </div>
+      </section>
 
-        {/* RIGHT CONTENT */}
-        <motion.div
-          initial={{ opacity: 0, x: 60 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: true }}
-          transition={{ ease: "easeInOut", duration: 0.8 }}
-          className="flex flex-col space-y-6 text-center md:text-left max-w-xl"
-        >
-          <h2 className="text-4xl md:text-5xl font-semibold leading-tight">
-            Study in India
-          </h2>
+      {/* Study In India CTA Section */}
+      <section className="my-16 w-full flex justify-center items-center bg-gray-50 py-12 md:py-16">
+        <div className="w-[90%] max-w-7xl flex flex-col md:flex-row items-center justify-between gap-10 font-Jakarta">
 
-          <p className="text-[16px] md:text-[18px] text-text leading-relaxed">
-            Benchmark Education offers reliable guidance for those looking to study in India,
-            connecting learners with top universities and diverse academic programs. 
-            From selecting the right course to assisting with admissions and documentation, 
-            every stage is supported with expert advice. 
-            The focus is on making the process simple while ensuring access to quality education and strong career opportunities.
+          {/* LEFT IMAGE */}
+          <motion.div
+            initial={{ opacity: 0, x: -60 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ ease: "easeInOut", duration: 0.8 }}
+            className="relative w-full md:w-1/2 overflow-hidden shadow-xl group rounded-2xl"
+          >
+            <img
+              src={admission}
+              alt="Study in India"
+              className="w-full h-[320px] md:h-[420px] object-cover transform group-hover:scale-105 transition-transform duration-500"
+            />
+            <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition duration-500"></div>
+          </motion.div>
 
-          </p>
+          {/* RIGHT CONTENT */}
+          <motion.div
+            initial={{ opacity: 0, x: 60 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ ease: "easeInOut", duration: 0.8 }}
+            className="flex flex-col space-y-6 text-center md:text-left max-w-xl"
+          >
+            <h2 className="text-4xl md:text-5xl font-semibold leading-tight">
+              Study in India
+            </h2>
 
-          <div className="flex flex-col sm:flex-row gap-4 sm:justify-start justify-center">
-            <Link
-              to="/study-in-india"
-              className="inline-block bg-primary hover:bg-secondary text-white px-6 py-3 rounded-lg text-base font-medium shadow-lg transition-colors duration-300"
-            >
-              MBA Courses
-            </Link>
+            <p className="text-[16px] md:text-[18px] text-text leading-relaxed">
+              Benchmark Education offers reliable guidance for those looking to study in India,
+              connecting learners with top universities and diverse academic programs.
+              From selecting the right course to assisting with admissions and documentation,
+              every stage is supported with expert advice.
+              The focus is on making the process simple while ensuring access to quality education and strong career opportunities.
 
-            <a
-              href="https://nursingentry.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block border-2 border-primary text-primary hover:bg-primary hover:text-white px-6 py-3 rounded-lg text-base font-medium shadow-lg transition-colors duration-300"
-            >
-              Nursing Entry
-            </a>
-          </div>
-        </motion.div>
-      </div>
-    </section>
+            </p>
+
+            <div className="flex flex-col sm:flex-row gap-4 sm:justify-start justify-center">
+              <Link
+                to="/study-in-india"
+                className="inline-block bg-primary hover:bg-secondary text-white px-6 py-3 rounded-lg text-base font-medium shadow-lg transition-colors duration-300"
+              >
+                MBA Courses
+              </Link>
+
+              <a
+                href="https://nursingentry.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block border-2 border-primary text-primary hover:bg-primary hover:text-white px-6 py-3 rounded-lg text-base font-medium shadow-lg transition-colors duration-300"
+              >
+                Nursing Entry
+              </a>
+            </div>
+          </motion.div>
+        </div>
+      </section>
 
       <section
         ref={section2}
@@ -1091,7 +1100,7 @@ const Home = () => {
         <div className="flex flex-row space-x-2 items-center w-full justify-center">
           <hr className="w-[10%]  border-text " />
           <p className="text-center">
-           Benchmark Education partners with top universities and institutions worldwide
+            Benchmark Education partners with top universities and institutions worldwide
           </p>
           <hr className="w-[10%] border-text " />
         </div>
@@ -1222,7 +1231,7 @@ const Home = () => {
           </motion.h2>
           <p className="text-[20px] animate-fadein text-text lg:w-[60%] md:w-1/2 text-center lg:text-left">
             We offer bespoke study abroad programs and expert consultancy to access top universities worldwide,
-           ensuring smooth academic and career success..
+            ensuring smooth academic and career success..
           </p>
           <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-5 w-full lg:w-[90%]">
             {stepsData.map((step, index) => (
@@ -1353,8 +1362,8 @@ const Home = () => {
             <span className="text-text"> Courses</span>
           </motion.h2>
           <p className="text-text text-center text-[16px]">
-            At Benchmark Education, we offer a wide range of professional courses and 
-            skill development programs designed for career growth. 
+            At Benchmark Education, we offer a wide range of professional courses and
+            skill development programs designed for career growth.
             Our career-oriented courses equip learners with practical skills and industry-relevant knowledge.
           </p>
           <div className="grid grid-cols-1 xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-2 z-20 gap-5 my-5 font-Jakarta  place-items-center items-center justify-center ">
@@ -1412,28 +1421,7 @@ const Home = () => {
         </div>
       </section>
       <section className="my-10 flex flex-col items-center justify-start ">
-        <div className="w-[90%] h-full font-Jakarta flex flex-col space-y-8">
-          <div className="flex flex-row flex-wrap items-center justify-between">
-            <motion.h2
-              initial={{ opacity: 0, translateY: 150 }}
-              whileInView={{ opacity: 1, translateY: 0 }}
-              viewport={{ once: true }}
-              transition={{ ease: "easeInOut", duration: 0.8 }}
-              className="lg:text-left xl:text-left md:text-left text-4xl md:text-5xl text-center  leading-snug font-semibold"
-              style={{ lineHeight: 1.3 }}
-            >
-              Discover Your Perfect
-              <br />
-              <span className="text-text"> Study Abroad Destination</span>
-            </motion.h2>
-            <p className="w-full md:w-full lg:w-[40%] text-[20px] text-text">
-              Unlock global opportunities with Benchmark Education. Let us guide
-              you to the perfect study destination for a brighter future.
-            </p>
-          </div>
-          <CountryFilter />
-        </div>
-        <div></div>
+        <CountryFilter />
       </section>
       <section className=" min-h-screen flex flex-col items-center justify-center font-Jakarta">
         <div className="w-[90%] relative ">
@@ -1451,12 +1439,12 @@ const Home = () => {
               <span className="text-text"> Guidance Team</span>
             </motion.h2>
             <p className="text-text text-center text-[18px] animate-fadein ">
-             Our experienced study abroad consultants provide personalized support, 
-             guiding students through international education and immigration processes
-             to ensure a smooth journey toward global academic and career success.
+              Our experienced study abroad consultants provide personalized support,
+              guiding students through international education and immigration processes
+              to ensure a smooth journey toward global academic and career success.
             </p>
           </div>
-          <div className="grid grid-cols-1 xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 place-content-center place-items-center font-Jakarta gap-5 bg-background rounded-lg py-10 px-5 relative top-0 w-full">
+          <div className="flex md:flex-row flex-col justify-evenly font-Jakarta gap-16 bg-background rounded-lg py-10 px-5 relative top-0 w-full">
             {TeamData.map((obj, index) => (
               // to={`/aboutus/${obj.name.replace(/\s+/g, "-").toLowerCase()}`}
               // // state={{ id: obj.id }}
@@ -1547,8 +1535,8 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <EventSection />
-      <section className="min-h-screen my-5 bg-background  flex flex-col items-center justify-center font-Jakarta py-10">
+      {/* <EventSection /> */}
+      {/* <section className="min-h-screen my-5 bg-background  flex flex-col items-center justify-center font-Jakarta py-10">
         <div className="w-[90%]  flex flex-col h-fit gap-10 ">
           <div className="flex flex-col space-y-10 ">
             <motion.h2
@@ -1563,8 +1551,8 @@ const Home = () => {
               <span className="text-text"> Journey with Us</span>
             </motion.h2>
             <p className="text-text text-center text-[18px]">
-             Our satisfied study abroad students share experiences exploring 
-             international education opportunities across 190+ countries worldwide.
+              Our satisfied study abroad students share experiences exploring
+              international education opportunities across 190+ countries worldwide.
 
             </p>
           </div>
@@ -1574,12 +1562,7 @@ const Home = () => {
                 <p>Loading</p>
               </div>
             )}
-            {error && (
-              <div className="text-center text-xl font-semibold text-red-500 h-[200px] grid place-items-center">
-                <p>Something went wrong <br /> <br />{error.message} !!</p>
-              </div>
-            )}
-            {data && (
+            {data?.testimonials?.length > 0 ? (
               <Slider {...settings} ref={(slider) => (sliderRef = slider)}>
                 {data.testimonials.map((obj, index) => (
                   <div
@@ -1589,10 +1572,7 @@ const Home = () => {
                   >
                     <div className="h-[50%] relative border-gray-800 w-full flex flex-col items-center justify-center rounded-lg group">
                       <ReactPlayer
-                        url={
-                          "https://benchmark-backend.ideassionlive.in" +
-                          obj.video.url
-                        }
+                        url={`${graphqlBaseUrl}${obj.video.url}`}
                         playing={currentVideoPlayingIndex === index}
                         onPlay={() => setCurrentVideoPlayingIndex(index)}
                         onEnded={() => setCurrentVideoPlayingIndex(null)}
@@ -1633,13 +1613,13 @@ const Home = () => {
                       />
                       <h5 className="font-semibold text-[17px] text-center">
                         {obj.title}{" "}
-                        {/* Assuming `title` is the reviewer’s name */}
                       </h5>
                     </div>
                   </div>
                 ))}
               </Slider>
-
+            ) : (
+              <div className="no-data text-center m">No data found</div>
             )}
             {
               data && (
@@ -1669,7 +1649,7 @@ const Home = () => {
             }
           </div>
         </div>
-      </section>
+      </section> */}
       <section className="min-h-screen flex flex-col items-center justify-center">
         <div className="w-[90%] grid lg:grid-cols-2 grid-cols-1 gap-5">
           <div className="flex flex-col justify-center space-y-4">
@@ -1686,7 +1666,7 @@ const Home = () => {
               <span className="text-text">Questions</span>
             </motion.h2>
             <p className="text-[18px] animate-fadein text-text text-center lg:text-left lg:w-[80%] w-full">
-              Find answers to common questions about our education consultancy services, 
+              Find answers to common questions about our education consultancy services,
               international education, and professional training programs.
 
             </p>
@@ -1699,7 +1679,7 @@ const Home = () => {
           </div>
         </div>
       </section>
-    </>
+    </div>
   );
 };
 

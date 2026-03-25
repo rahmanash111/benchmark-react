@@ -106,10 +106,12 @@ const LanguageTraining = () => {
     {
       id: 1,
       courseName: "German",
-      title: "Master German and Unlock Global Opportunities",
+      title: "Learn German and Unlock Global Opportunities",
       description:
-        "Join our comprehensive German Language Course to elevate your skills from beginner to advanced levels. Whether you aim to study, work, or settle in German-speaking countries, our course has you covered. With expert-led training, tailored resources, and job placement support, you're set to achieve fluency and unlock new career pathways.",
-      courseTitle: "German Language Course",
+        "Build strong communication skills with our German Language Course designed for students and professionals aiming to study in Germany, work with international companies, or settle in German-speaking countries.",
+  
+        courseTitle: "German Language Course",
+        
       objectives: [
         "Study, work, or settle in German-speaking countries",
         "Prepare for DSH, TestDaF, and Goethe-Institut exams",
@@ -117,114 +119,114 @@ const LanguageTraining = () => {
       ],
       bannerImg:GermanImg,
       whyChooseUs: {
-        title: "Why Choose Our German Language Course?",
+        title: "Why Choose Our German Language Program?",
         description:
-          "Our German course offers unique benefits, expert instruction, and resources designed to help you master the language and achieve your career and academic goals.",
+          "Professional coaching focused on building strong German proficiency.",
         details: [
           {
-            title: "Expert-Led Training",
+            title: "Expert Trainers with Industry Experience",
             description:
-              "Learn from experienced instructors with over 15 years of expertise.",
+              "Our trainers bring years of experience in German language coaching, helping learners understand pronunciation, grammar, and real-life communication through practical guidance.",
           },
           {
-            title: "Complete Skill Development",
+            title: "Structured Learning from A1 to C1",
             description:
-              "Enhance speaking, listening, reading, and writing skills.",
+              "The program follows internationally recognized German proficiency levels, enabling learners to build strong foundations and progress toward advanced communication abilities.",
           },
           {
-            title: "Exam Preparation",
-            description: "Coaching for DSH, TestDaF, and Goethe exams.",
+            title: "Preparation for International Exams",
+            description: "Students receive focused guidance for Goethe certification, TestDaF preparation, and DSH exam training, which are essential for academic and professional opportunities abroad.",
           },
           {
-            title: "Job Placement Support",
+            title: "Interactive Communication Practice",
             description:
-              "1-year guaranteed job assistance for global opportunities.",
+              "Our sessions include practical German speaking practice and real-life scenarios that help learners develop confidence in conversations and everyday communication.",
           },
           {
-            title: "Gold Membership",
+            title: "Global Career and Academic Support",
             description:
-              "Premium benefits including career resources, job alerts, and project opportunities.",
+              "Develop strong German proficiency skills that help you access international education opportunities and career pathways in global organizations.",
           },
         ],
       },
       courseLevels: {
         title: "Course Levels We Offer",
         description:
-          "No matter where you are in your learning journey, our structured curriculum will guide you.",
+          "Our structured curriculum supports learners at every stage, from beginners to advanced proficiency, helping students progress through internationally recognized language levels.",
         levels: [
           {
             level: "A1 & A2",
             type: "Beginner Levels",
-            description: "Build a strong foundation.",
+            description: "Start your journey with A1 German course and A2 German course, designed to build a strong base in vocabulary, pronunciation, and everyday communication.",
           },
           {
             level: "B1 & B2",
             type: "Intermediate Levels",
-            description: "Gain confidence and fluency.",
+            description: "Develop confidence through B1 German course and B2 German course, focusing on real-life conversations, comprehension, and academic communication skills.",
           },
           {
             level: "C1 & C2",
             type: "Advanced Levels",
-            description: "Master the language with professional proficiency.",
+            description: "Achieve professional mastery with C1 German course and C2 German course, designed for advanced fluency, complex communication, and global career opportunities.",
           },
         ],
       },
       keyFeatures: {
         title: "Key Features of the Course",
         description:
-          "Our course provides comprehensive features to ensure a well-rounded and engaging learning experience.",
+          "Our program includes essential learning elements designed to support German language learning and create an engaging, structured study experience.",
         features: [
           {
             title: "Live Online Classes",
             description:
-              "Interactive, two-way live sessions with experienced German tutors.",
+              "Interactive two-way sessions with experienced tutors focused on improving German speaking skills through guided practice and communication activities.",
           },
           {
             title: "Personalized Feedback",
             description:
-              "Receive corrections on speaking and writing exercises to improve faster.",
+              "Receive detailed corrections and suggestions to strengthen German writing practice and improve communication accuracy.",
           },
           {
             title: "Exclusive Study Material",
             description:
-              "Access 40+ hours of study materials, videos, and assessments.",
+              "Get access to curated resources designed for effective German vocabulary building and continuous language development.",
           },
           {
             title: "Real-Life Projects",
             description:
-              "Work on practical German language projects to apply what you’ve learned.",
+              "Apply your knowledge through practical exercises that improve German conversation practice in real-world situations.",
           },
           {
             title: "Masterclass & Hackathons",
             description:
-              "Participate in soft skill development masterclasses and language competitions.",
+              "Participate in special sessions focused on German communication skills along with engaging learning activities and competitions.",
           },
         ],
       },
       careerAndLearningBenefits: {
         title: "Career & Learning Benefits",
         description:
-          "Gain a competitive edge with our course's career-boosting benefits and practical learning outcomes.",
+          "Gain valuable skills that support international careers and academic growth through practical training and recognized language certification.",
         benefits: [
           {
             title: "Global Job Opportunities",
             description:
-              "Secure positions in top companies across Germany, Austria, Switzerland, and the EU.",
+              "Open doors to international careers with strong German workplace communication skills valued by companies across Europe.",
           },
           {
             title: "Boost Your CV & LinkedIn",
             description:
-              "Enhance your professional profile with a recognized German certification.",
+              "Strengthen your professional profile by showcasing German proficiency on your CV and LinkedIn.",
           },
           {
             title: "Freelancing",
             description:
-              "Tap into the global freelance market with expertise in German translation, teaching, and more.",
+              "Explore global remote opportunities with skills in German translation and online language services.",
           },
           {
             title: "Study Abroad",
             description:
-              "Become fluent in German and open doors to top universities and academic programs.",
+              "Increase your chances of university admission with German academic requirements needed for international education.",
           },
         ],
       },
@@ -282,146 +284,146 @@ const LanguageTraining = () => {
       whyChooseUs: {
         title: "Why Choose Our Japanese Language Course?",
         description:
-          "Our Japanese course offers expert-led instruction, immersive learning, and career support tailored to help you achieve language mastery and career readiness.",
+          "Expert training, practical learning, JLPT preparation, and career-focused guidance to help you achieve fluency and global opportunities.",
         details: [
           {
             title: "Expert-Led Sessions",
             description:
-              "Learn from industry veterans with years of teaching experience.",
+              "Learn from the best Japanese language institute trainers with real teaching experience.",
           },
           {
             title: "Full-Spectrum Language Skills",
             description:
-              "Develop fluency in speaking, reading, writing, and listening.",
+              "Master fluency through our Japanese speaking course online with structured practice.",
           },
           {
             title: "Exam Preparation",
             description:
-              "Get personalized coaching to excel in the Japanese-Language Proficiency Test (JLPT).",
+              "Get complete support for JLPT N5 N4 training with expert guidance.",
           },
           {
             title: "Career-Oriented Learning",
             description:
-              "Access job placement support and open doors to global opportunities.",
+              "Join a Japanese language training institute that offers career-focused learning and opportunities.",
           },
           {
             title: "Cultural Immersion",
             description:
-              "Engage with Japan’s rich culture and language through practical learning methods.",
+              "Learn Japanese from scratch while exploring culture, etiquette, and real-life communication.",
           },
         ],
       },
       courseLevels: {
         title: "Course Levels We Offer",
         description:
-          "Our structured curriculum supports learners at every stage of their Japanese language journey.",
+          "Our structured curriculum supports learners at every stage of their Japanese language journey with practical, exam-focused training.",
         levels: [
           {
             level: "N5 & N4",
             type: "Beginner Levels",
-            description: "Build your basic knowledge of Japanese.",
+            description: "Strong foundation for Japanese course for beginners",
           },
           {
             level: "N3",
-            type: "Intermediate Level",
-            description: "Develop conversation skills for everyday use.",
+            type: "Intermediate Levels",
+            description: "Improve skills with intermediate Japanese course N3",
           },
           {
             level: "N2 & N1",
             type: "Advanced Levels",
             description:
-              "Achieve full professional fluency and master complex language structures.",
+              "Achieve fluency through advanced Japanese language training",
           },
         ],
       },
       keyFeatures: {
         title: "Key Features of the Course",
         description:
-          "Our course provides comprehensive features to ensure effective, immersive, and engaging language learning.",
+          "Designed to make learning interactive, practical, and easy to apply.",
         features: [
           {
             title: "Live Interactive Classes",
             description:
-              "Join two-way live sessions with Japanese language experts.",
+              "Join live sessions with real-time interaction and expert guidance.",
           },
           {
             title: "Personalized Feedback",
             description:
-              "Improve quickly with detailed corrections on speaking and writing tasks.",
+              "Receive detailed corrections to improve speaking, writing, and accuracy faster.",
           },
           {
             title: "Exclusive Study Material",
             description:
-              "Access a range of resources including practice exams, videos, and exercises.",
+              "Access curated resources, practice tests, and structured learning materials anytime.",
           },
           {
             title: "Cultural Projects",
             description:
-              "Work on projects that explore Japanese traditions, history, and current events.",
+              "Work on practical projects to understand traditions, behavior, and communication styles.",
           },
           {
             title: "Masterclasses & Competitions",
             description:
-              "Participate in special sessions and hackathons to sharpen your skills.",
+              "Participate in special sessions, activities, and challenges to improve skills.",
           },
         ],
       },
       careerAndLearningBenefits: {
         title: "Career & Learning Benefits",
         description:
-          "Open new career pathways and achieve language fluency through our course's practical benefits.",
+          "Unlock global career growth, practical skills, and long-term professional opportunities.",
         benefits: [
           {
             title: "Global Job Opportunities",
             description:
-              "Open doors to jobs in Japan and multinational companies worldwide.",
+              "Access international roles across industries with strong communication and professional skills.",
           },
           {
             title: "Boost Your CV & LinkedIn",
             description:
-              "Add a recognized certification in Japanese to enhance your professional profile.",
+              "Enhance your profile with recognized certification and globally valued communication skills.",
           },
           {
             title: "Freelancing Opportunities",
             description:
-              "Work as a translator, language instructor, or consultant with your new skills.",
+              "Work independently as translator, tutor, or consultant using your communication expertise.",
           },
           {
             title: "Study in Japan",
             description:
-              "Become fluent in Japanese to qualify for top universities and academic programs in Japan.",
+              "Qualify for top universities with required proficiency and strong academic readiness.",
           },
         ],
       },
       whyLearn: {
         title: "Why Learn Japanese?",
         description:
-          "Japan is a global hub for technology, business, and culture. Knowing the language gives you a competitive edge in industries like IT, manufacturing, design, and education. Whether for personal growth or career advancement, mastering Japanese can unlock new pathways for success.",
+          "Gain advantage in global industries like technology, business, design, and education sectors.",
       },
       supportForYourJourney: {
         title: "How We Support Your Journey",
         description:
-          "Our tailored approach ensures that you receive all the support you need to succeed in mastering Japanese.",
+          "Receive structured guidance, resources, and mentorship to achieve learning goals confidently.",
         supportDetails: [
           {
             title: "Tailored Learning Plan",
             description:
-              "Customized schedules and lesson plans that align with your goals.",
+              "Get personalized schedules and lessons designed based on your learning goals.",
           },
           {
             title: "Internship Support",
             description:
-              "Gain practical experience through internships with Japanese-speaking firms.",
+              "Gain real-world experience through opportunities with companies requiring communication skills.",
           },
           {
             title: "Certification",
             description:
-              "Receive an industry-recognized Japanese language certification after completing the course.",
+              "Earn recognized certification validating your proficiency and enhancing career opportunities globally.",
           },
           {
             title: "Job Placement Assistance",
             description:
-              "We offer job support for up to 1 year after course completion to help you secure roles in Japan and beyond.",
+              "Receive career support, guidance, and opportunities to secure roles after completion.",
           },
         ],
       },
@@ -436,7 +438,7 @@ const LanguageTraining = () => {
       courseName: "IELTS",
       title: "Why Choose Our IELTS Course?",
       description:
-        "Embark on your journey to mastering the English language with our comprehensive IELTS course designed to elevate your skills and confidence.",
+        "Achieve target band scores with expert training, practice, and guidance.",
       courseTitle: "IELTS Language Course",
       objectives: [
         "Achieve language mastery for academic and professional success",
@@ -449,132 +451,132 @@ const LanguageTraining = () => {
           {
             title: "Expert Guidance",
             description:
-              "Learn from industry leaders with extensive experience in language training and soft skills enhancement.",
+              "Learn from experienced trainers offering the best IELTS coaching for success.",
           },
           {
             title: "Tailored Curriculum",
             description:
-              "Our course content is customized to meet your unique learning needs, ensuring maximum engagement and effectiveness.",
+              "Personalized study plans designed for faster improvement and better test performance.",
           },
           {
             title: "Flexible Learning Options",
             description:
-              "Choose from various course levels and formats, whether you prefer online, offline, or hybrid classes.",
+              "Choose online or offline IELTS classes based on your schedule flexibility.",
           },
         ],
       },
       courseLevels: {
         title: "Course Levels We Offer",
         description:
-          "Our structured levels cater to learners at each stage of their English language journey.",
+          "Structured levels designed to improve English skills for IELTS preparation success.",
         levels: [
           {
             level: "Beginner Level (A1-A2)",
             description:
-              "Introduction to basic English language skills, vocabulary, and grammar.",
+              "Build basic English skills with foundation-level IELTS preparation and vocabulary training.",
           },
           {
             level: "Intermediate Level (B1-B2)",
             description:
-              "Enhance your speaking, writing, and comprehension skills for everyday and professional contexts.",
+              "Improve communication, writing, and comprehension for academic and professional IELTS success.",
           },
           {
             level: "Advanced Level (C1-C2)",
             description:
-              "Master complex language structures and refine your proficiency for academic and professional success.",
+              "Master advanced English skills for high band score IELTS exam results.",
           },
         ],
       },
       keyFeatures: {
         title: "Key Features of the Course",
         description:
-          "Our course offers unique features designed to boost your preparation, engagement, and results.",
+          "Practical features designed to improve preparation, performance, and overall test confidence.",
         features: [
           {
             title: "FREE Consultation",
             description:
-              "Discuss your goals and get personalized course recommendations.",
+              "Get expert advice and guidance before joining the best IELTS coaching.",
           },
           {
             title: "Practice Tests",
             description:
-              "Regular mock tests to assess your progress and improve test-taking strategies.",
+              "Attend regular mock tests to improve performance in IELTS exam.",
           },
           {
             title: "Personalized Feedback",
             description:
-              "One-on-one sessions with trainers to enhance specific areas of improvement.",
+              "Receive one-on-one feedback to improve weak areas in IELTS preparation.",
           },
           {
             title: "Study Material",
             description:
-              "Access to a wealth of resources, including practice exercises, video content, and more.",
+              "Access curated resources for effective IELTS preparation including exercises and practice.",
           },
         ],
       },
       careerAndLearningBenefits: {
         title: "Career & Learning Benefits",
         description:
-          "Gain skills and credentials to open new educational and career opportunities worldwide.",
+          "Develop global skills and unlock opportunities through strong English communication abilities.",
         benefits: [
           {
             title: "Global Opportunities",
             description:
-              "Enhance your employability in international job markets where English is the primary language.",
+              "Access international jobs requiring strong English communication and IELTS qualification scores.",
           },
           {
             title: "Higher Education Access",
             description:
-              "Meet the language requirements for universities worldwide, particularly in the UK, Australia, and Canada.",
+              "Study abroad by meeting IELTS requirements for universities in top countries.",
           },
           {
             title: "Skill Development",
             description:
-              "Improve your communication skills, critical thinking, and cultural awareness—essential for personal and professional growth.",
+              "Enhance communication, confidence, and critical thinking for academic and career success.",
           },
         ],
       },
       whyLearn: {
         title: "Why Learn IELTS?",
         description:
-          "IELTS is a globally recognized certification that proves your English proficiency, boosting confidence and opening doors to study, travel, and career advancement.",
+          "Improve English proficiency for study, work, travel, and global opportunities.",
         benefits: [
           {
             title: "Recognized Certification",
             description:
-              "IELTS is accepted by thousands of institutions globally, serving as proof of your English proficiency.",
+              "IELTS accepted worldwide as proof of English language proficiency skills.",
           },
           {
             title: "Boost Your Confidence",
             description:
-              "Gain the skills and confidence to communicate effectively in both academic and professional settings.",
+              "Gain communication skills for academic, professional, and everyday English usage.",
           },
           {
             title: "Broaden Your Horizons",
             description:
-              "Open doors to new opportunities in education, travel, and career advancement.",
+              "Unlock opportunities for higher education, international jobs, and global travel.",
           },
         ],
       },
       supportForYourJourney: {
         title: "How We Support Your Journey",
         description:
-          "Our support system ensures ongoing guidance, mentorship, and community engagement.",
+          "Receive guidance, mentorship, and structured resources for successful IELTS preparation.",
         supportDetails: [
           {
             title: "Dedicated Mentorship",
             description:
-              "Benefit from the guidance of our experienced trainers who are committed to your success.",
+              "Learn from experienced trainers committed to achieving your desired band scores.",
           },
           {
             title: "Community Support",
             description:
-              "Join a vibrant community of learners and engage in discussions and activities that foster collaboration.",
+              "Engage with learners through discussions, activities, and peer learning opportunities.",
           },
           {
             title: "Continuous Improvement",
             description:
-              "We offer ongoing support and resources even after you complete the course.",
+              "Access ongoing resources and support even after course completion for growth.",
           },
         ],
       },

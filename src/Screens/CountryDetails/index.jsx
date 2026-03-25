@@ -10,6 +10,7 @@ import { motion } from "framer-motion";
 import { Helmet } from "react-helmet";
 import { gql, useQuery } from "@apollo/client";
 import Loader from "../../Components/Loader";
+const graphqlBaseUrl = process.env.REACT_APP_GRAPHQL_API_URL.replace('/graphql', '');
 
 const CountryDetails = () => {
   const { continentName, countryName } = useParams();
@@ -278,7 +279,7 @@ const { data, loading, error } = useQuery(query);
               className="h-[500px] w-full rounded-2xl"
             >
               <img
-                src={`https://benchmark-backend.ideassionlive.in${countryData?.banner_image?.url}`}
+                src={`${graphqlBaseUrl}${countryData?.banner_image?.url}`}
                 className="h-full w-full object-cover rounded-2xl"
                 alt=""
               />

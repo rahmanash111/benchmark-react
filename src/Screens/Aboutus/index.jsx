@@ -90,10 +90,10 @@ const Aboutus = () => {
             transition={{ duration: 0.8, ease: "easeInOut" }}
             className="text-[1.8rem] font-bold text-center"
           >
-            Empowering Education, Transforming Futures
+            About Benchmark Education 
           </motion.h2>
           <p className="text-text text-[1rem] font-medium text-center">
-            Discover Our Commitment to Educational Excellence and Success
+             Empowering Careers Through Quality Education
           </p>
           <motion.button
             initial={{ opacity: 0, y: 10 }}
@@ -117,17 +117,14 @@ const Aboutus = () => {
               className="lg:text-left xl:text-left md:text-left text-4xl md:text-5xl text-center leading-snug font-semibold"
               style={{ lineHeight: 1.3 }}
             >
-              Your Trusted Partner
+              Your Trusted 
               <br />
-              <span className="text-text">for Overseas Admissions</span>
+              <span className="text-text"> Overseas Education Partner</span>
             </motion.h2>
             <p className="w-full animate-fadein md:w-full lg:w-[40%] text-[20px] text-text text-center lg:text-justify">
-              At Benchmark Education, we transform the admissions process into a
-              streamlined, stress-free experience. Our expert team offers
-              tailored, one-on-one counseling to guide you through selecting the
-              perfect program, institution, and country—aligned perfectly with
-              your academic credentials, financial considerations, and career
-              ambitions.
+          Benchmark Education is a trusted overseas education consultancy offering expert admission guidance, 
+          career counseling, and university selection support to help students achieve academic goals with
+          personalized assistance and smooth application process.
             </p>
           </div>
           <hr />
@@ -138,25 +135,23 @@ const Aboutus = () => {
             transition={{ ease: "easeInOut", duration: 0.8 }}
             className=" w-full"
           >
+             <motion.h2
+              initial={{ opacity: 0, translateY: 150 }}
+              whileInView={{ opacity: 1, translateY: 0 }}
+              viewport={{ once: true }}
+              transition={{ ease: "easeInOut", duration: 0.8 }}
+              className="lg:text-left xl:text-left md:text-left text-4xl md:text-5xl text-center leading-snug font-semibold"
+              style={{ lineHeight: 1.3 }}
+            >
+              Your Gateway to
+              <br />
+              <span className="text-text"> Global Universities</span>
+            </motion.h2>
+            
             <p className="w-full animate-fadein text-center  text-[20px] text-text ">
-              Leveraging our extensive network of over 200 top-tier
-              universities, colleges, and polytechnics worldwide, including
-              leading Overseas Program Providers, we ensure a hassle-free
-              admission process. Our dedicated follow-ups with universities
-              expedite your application, and we also provide personalized
-              support for securing spots at institutions outside our direct
-              network.
-              <br />
-              <br />
-              From managing application details to prepping you for
-              interviews—whether virtual or telephonic—our
-              internationally-trained admissions specialists are committed to
-              delivering a seamless experience. Best of all, our services come
-              at no cost to you.
-              <br />
-              <br />
-              Choose Benchmark Education for a flawless, high-success admission
-              journey.
+              Benchmark Education offers expert overseas admission guidance, helping students secure seats at top universities worldwide.
+               With personalized counseling, seamless application support, and strong global networks, we ensure a stress-free, efficient, 
+               and successful admission journey for every student.
             </p>
             <img
               src={AboutIMG}
@@ -171,32 +166,29 @@ const Aboutus = () => {
         <div className="w-[90%] h-full font-Jakarta grid grid-cols-1 lg:grid-cols-2 gap-10">
           <div className="col-span-1 flex flex-col space-y-5 items-start justify-center">
             <motion.h2
-              initial={{ opacity: 0, translateY: 150 }}
+                 initial={{ opacity: 0, translateY: 150 }}
               whileInView={{ opacity: 1, translateY: 0 }}
               viewport={{ once: true }}
               transition={{ ease: "easeInOut", duration: 0.8 }}
               className="lg:text-left xl:text-left md:text-left text-4xl md:text-5xl text-center leading-snug font-semibold"
               style={{ lineHeight: 1.3 }}
             >
-              Guiding Futures with
+             Guiding Students to  
+
               <br />
-              <span className="text-text">Expertise and Compassion</span>
+              <span className="text-text">Global Academic Success </span>
             </motion.h2>
             <p className="w-full md:w-full text-center  text-[20px] text-text">
-              As a leading education counselor, we are dedicated to helping
-              students make informed decisions about their academic and career
-              paths. With extensive experience, we offer personalized guidance
-              at every stage—whether it's choosing the right courses, selecting
-              institutions, or navigating admissions.
+              Benchmark Education provides expert overseas admission guidance, 
+              helping students make informed academic and career decisions. 
+              Our personalized counseling, course selection support, and admission
+              assistance ensure a smooth, stress-free journey toward top universities worldwide.
               <br />
               <br />
-              Our approach is tailored to each student's unique goals and
-              challenges. We provide one-on-one counseling to identify the best
-              paths for their ambitions, staying updated with the latest trends
-              in education and career opportunities. We aim to enhance academic
-              prospects while building confidence and self-awareness, ensuring
-              students are well-prepared for their future. Our goal is to see
-              students thrive academically, professionally, and personally.
+              With extensive experience and up-to-date knowledge of global education trends,
+              Benchmark Education offers one-on-one guidance tailored to each student.
+              We focus on enhancing academic prospects, building confidence, and 
+              ensuring students achieve success professionally, academically, and personally.
             </p>
           </div>
           <motion.div
@@ -225,17 +217,17 @@ const Aboutus = () => {
               className="lg:text-left xl:text-left md:text-left text-4xl md:text-5xl text-center leading-snug font-semibold"
               style={{ lineHeight: 1.3 }}
             >
-              Benchmark Education Receives
-              <span className="text-text"> The Quality Counseling Award</span>
+              Award-Winning Education 
+
+              <span className="text-text">Counseling by Benchmark Education</span>
             </motion.h2>
             <p className="w-full md:w-full  text-[20px] text-text text-center ">
-              Benchmark Education is proud to be honored with the prestigious
-              Quality Counseling Award from Peter's Foundation Initiative, in
-              partnership with FAB Business Group. This accolade celebrates our
-              unwavering commitment to upholding the highest standards of
-              counseling excellence. By setting a new benchmark for authenticity
-              and quality, we continue to inspire trust and drive positive
-              results in the communities we serve.
+               Benchmark Education has been honored with the prestigious Quality Counseling Award, 
+               recognizing our excellence in overseas education guidance. Our expert team provides 
+               personalized counseling, university selection support, and admission assistance to 
+               help students achieve their academic goals. Leveraging extensive global networks and 
+               industry expertise, Benchmark Education ensures a seamless, reliable, and successful admission process. 
+               We continue to set the standard for quality, trust, and student-focused education guidance worldwide.
             </p>
           </div>
           <motion.div
