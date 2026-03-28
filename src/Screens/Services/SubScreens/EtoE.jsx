@@ -8,26 +8,27 @@ import EtEImg from '../../../assets/Services/ete.webp'
 const EtoE = () => {
     const data = {
         "id": "5",
-        "heading": "End-To-End Admission Support",
+        "heading": "Complete Admission Guidance",
+        "desc":"Expert support for university applications, ensuring smooth enrollment process and international admission planning from start to finish.",
         "sections": [
             {
                 "id": "5.1",
                 "title": "Seamless Application Management",
-                "description": "Our end-to-end support service ensures that the entire admission process is smooth and stress-free. From selecting the right programs and universities to handling every aspect of the application, we are with you every step of the way.",
+                "description": "Our team provides full support for every stage of your university applications. From program selection to submission, we ensure a smooth process with expert application management services and international enrollment guidance tailored to your goals.",
                 "icon": UserGroupIcon,
                 "bgColor": "#E1F5FE"
             },
             {
                 "id": "5.2",
                 "title": "Timely Follow-Up and Support",
-                "description": "We track the progress of each application, follow up with universities for updates, and ensure that all deadlines are met. This comprehensive support minimizes errors and increases your chances of acceptance.",
+                "description": "We monitor the status of each application, communicate with universities for updates, and meet all deadlines. Our admissions tracking assistance and university communication support reduce errors and improve your chances of securing an offer.",
                 "icon": ClockIcon,
                 "bgColor": "#FFFDE7"
             },
             {
                 "id": "5.3",
                 "title": "Acceptance and Next Steps",
-                "description": "Once you receive offers, we help you evaluate them and make informed decisions about your final choice of university. Our counsellors also guide you through any post-admission processes, such as confirming your place, paying deposits, and securing housing.",
+                "description": "After receiving offers, we guide you in evaluating choices and making informed decisions. Our counselors assist with offer assessment support and post-admission planning, including deposits, documentation, and housing arrangements for a seamless transition abroad.",
                 "icon": CheckCircleIcon,
                 "bgColor": "#E8F5E9"
             }
@@ -36,21 +37,21 @@ const EtoE = () => {
             {
                 "id": "5.4",
                 "title": "Document Preparation",
-                "description": "Guide you through gathering all the necessary documents, including financial statements, letters of admission, and proof of accommodation.",
+                "description": "Organize essential documents efficiently with university document assistance and study abroad paperwork support.",
                 "icon": DocumentIcon,
                 "bgColor": "#F0F4C3"
             },
             {
                 "id": "5.5",
                 "title": "Visa Application",
-                "description": "Assist with filling out visa application forms and ensuring all details are correct and submitted on time.",
+                "description": "Complete visa forms accurately with student visa guidance and international visa application help.",
                 "icon": PaperClipIcon,
                 "bgColor": "#FFCCBC"
             },
             {
                 "id": "5.6",
                 "title": "Interview Preparation",
-                "description": "Conduct mock visa interviews to help you prepare for the real thing, ensuring confidence and clarity in your answers.",
+                "description": "Build confidence through visa interview coaching and mock interview practice for smooth approvals.",
                 "icon": UserCircleIcon,
                 "bgColor": "#D1C4E9"
             }
@@ -60,9 +61,9 @@ const EtoE = () => {
   return (
     <>
     <Helmet>
-      <title>End-To-End Admission Support</title>
+      <title>Complete Admission Guidance</title>
     </Helmet>
-    <BannerSection title={data.heading}/>
+    <BannerSection title={data.heading} desc={data.desc}/>
     <section className=" flex flex-col items-center my-10">
       <div className="w-[90%] flex flex-col space-y-10 ">
         <motion.h2

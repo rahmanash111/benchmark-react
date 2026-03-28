@@ -9,25 +9,26 @@ const VisaAndVisaGuidence = () => {
 
     const data = {
         "id": "6",
-        "heading": "Visa & Spouse Visa Guidance",
+        "heading": "Visa & Spouse Visa Guidance Services | Benchmark Education",
+        "desc":"Benchmark Education offers spouse visa guidance and visa application support for faster approvals with expert assistance.",
         "sections": [
             {
                 "id": "6.1",
-                "title": "Student Visa Application Expertise",
-                "description": "Navigating the visa process can be complicated, but we provide expert guidance to ensure your visa application is successful. We help you gather the necessary documents, fill out visa forms, and prepare for interviews, ensuring that you meet all the immigration requirements for your destination country.",
+                "title": "Student Visa Application Guidance",
+                "description": "Get expert student visa application guidance with complete visa process support, including documentation, form filling, and interview preparation. Benchmark Education ensures your student visa approval chances improve with accurate submissions and up-to-date immigration compliance for your chosen study destination.",
                 "icon": LockClosedIcon,
                 "bgColor": "#FFABAB"
             },
             {
                 "id": "6.2",
-                "title": "Spouse Visa Assistance",
-                "description": "For students applying to countries that allow dependent or spouse visas, such as Canada and the UK, we also provide assistance with spouse visa applications, ensuring that you and your family can relocate together.",
+                "title": "Spouse Visa Guidance Services",
+                "description": "Our spouse visa guidance services help students apply for dependent visas in countries like Canada and the UK. We simplify the spouse visa application process, ensuring proper documentation and compliance so families can relocate together smoothly without unnecessary delays or confusion.",
                 "icon": UserGroupIcon,
                 "bgColor": "#FFCCBC"
             },
             {
                 "id": "6.3",
-                "title": "Comprehensive Support",
+                "title": "Complete Visa Assistance Services",
                 "description": "Our visa experts are well-versed in the regulations of various countries and provide personalized support to address any issues or concerns that may arise during the visa process.",
                 "icon": UserGroupIcon,
                 "bgColor": "#E3F2FD"
@@ -36,22 +37,22 @@ const VisaAndVisaGuidence = () => {
         "steps": [
             {
                 "id": "6.4",
-                "title": "Document Preparation",
-                "description": "Guide you through gathering all the necessary documents, including financial statements, letters of admission, and proof of accommodation.",
+                "title": "Document Preparation Support",
+                "description": "Expert visa documentation support to gather financial proof, admission letters, and accommodation details for a smooth visa application process.",
                 "icon": DocumentArrowUpIcon,
                 "bgColor": "#FCE4EC"
             },
             {
                 "id": "6.5",
-                "title": "Visa Application",
-                "description": "Assist with filling out visa application forms and ensuring all details are correct and submitted on time.",
+                "title": "Application Process Assistance",
+                "description": "Professional visa application assistance to complete forms accurately, avoid errors, and ensure timely submission for faster visa approval success.",
                 "icon": PaperAirplaneIcon,
                 "bgColor": "#E8F5E9"
             },
             {
                 "id": "6.6",
-                "title": "Interview Preparation",
-                "description": "Conduct mock visa interviews to help you prepare for the real thing, ensuring confidence and clarity in your answers.",
+                "title": "Interview Preparation Guidance",
+                "description": "Effective visa interview preparation with mock sessions, expert tips, and confidence-building strategies to improve your chances of visa approval.",
                 "icon": UserCircleIcon,
                 "bgColor": "#D1C4E9"
             }
@@ -63,7 +64,7 @@ const VisaAndVisaGuidence = () => {
     <Helmet>
       <title>Visa & Spouse Visa Guidance</title>
     </Helmet>
-    <BannerSection title={data.heading}/>
+    <BannerSection title={data.heading} desc={data.desc}/>
     <section className=" flex flex-col items-center my-10">
       <div className="w-[90%] flex flex-col space-y-10 ">
         <motion.h2

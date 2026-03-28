@@ -4,7 +4,10 @@ import Shape1 from "../../assets/Images/br_shape1.png";
 import Shape2 from "../../assets/Images/br_shape2.png";
 import { Link } from "react-router-dom";
 
-const BannerSection = ({ title }) => {
+const BannerSection = ({ title, desc }) => {
+
+  const isMobile = window.innerWidth < 760;
+
   return (
     <section
       className="min-h-[350px] font-Jakarta flex flex-col items-center justify-center "
@@ -20,11 +23,11 @@ const BannerSection = ({ title }) => {
           <h2 className="text-[1.5rem] md:text-[2.5rem] lg:text-[3rem]  font-bold text-left text-white capitalize">
             {title}
           </h2>
-
-          <ul className="flex flex-row space-x-2 h-fit py-2 items-center bg-white rounded-md capitalize w-fit px-5 font-semibold ">
+          {!isMobile && <p className="text-white text-[14px] md:text-[16px] mt-6">{desc}</p>}
+          {/* <ul className="flex flex-row space-x-2 h-fit py-2 items-center bg-white rounded-md capitalize w-fit px-5 font-semibold ">
             <Link to={"/"}>Home /</Link>
             <a>{title}</a>
-          </ul>
+          </ul> */}
         </div>
 
         <div className="absolute inset-0 w-[95%] flex flex-row justify-between">

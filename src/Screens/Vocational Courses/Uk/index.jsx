@@ -157,55 +157,58 @@ const data = {
       {
         title: "Job-Ready Skills",
         description:
-          "Get practical, real-world training that prepares you for immediate employment.",
+          "Gain job-ready skills through practical, real-world training programs.",
       },
       {
         title: "Fast-Track Your Career",
         description:
-          "Learn specialized skills in a short time and begin working right away.",
+          "Accelerate growth with fast-track career courses for quick employment.",
       },
       {
         title: "Industry-Recognized Certifications",
-        description: "Enhance your CV with UK-accredited qualifications.",
+        description: "Earn UK accredited certifications valued by global employers.",
       },
       {
         title: "Flexible Learning Options",
         description:
-          "Study full-time, part-time, or online at your convenience.",
+          "Choose flexible learning options including online, part-time, or full-time.",
       },
       {
         title: "Expert Tutors",
         description:
-          "Learn from industry professionals with years of experience.",
+          " Learn from industry expert trainers with real-world experience.",
       },
       {
         title: "Comprehensive Career Support",
         description:
-          "Get help with job placements, CV building, and interview preparation.",
+          "Access career support services including CV and interview preparation.",
       },
     ],
   },
 
   student_work_details: {
-    question: "Can Students Work While on a Vocational Course Visa?",
+    question: "Work While Studying in the UK",
     answer:
-      "Yes, students on a Tier 4 Student Visa are typically allowed to work while studying in the UK.",
+      "Balance studies with income using UK student work rights during your course.",
     work_options: [
       {
         title: "Part-Time Work",
         description:
-          "Students can work up to 20 hours per week during term time.",
+          " Work legally with part-time jobs UK students up to 20 hours weekly.",
       },
       {
         title: "Full-Time Work",
         description:
-          "During holidays and scheduled breaks, students can work full-time hours.",
+          "Earn more through full-time work UK students during holidays and official breaks.",
       },
     ],
   },
 };
 
 const VocationalCoursesUK = () => {
+
+  const isMobile = window.innerWidth < 760;
+
   return (
     <section>
       <Helmet>
@@ -224,13 +227,14 @@ const VocationalCoursesUK = () => {
           <div className="container w-[90%] z-10">
             <h2 className="text-[1.5rem] md:text-[2.5rem] lg:text-[3rem]  font-bold text-left text-white capitalize">
               {" "}
-              Vocational Courses in UK
+              Vocational Courses in the UK <br /> with Benchmark Education
             </h2>
+            {!isMobile && <p className="text-white text-[14px] md:text-[16px] mt-6">Gain practical, career-focused skills through expert-guided vocational programs designed to prepare you for real job opportunities in the UK.</p>}
 
-            <ul className="flex flex-row space-x-2 h-fit py-2 items-center bg-white rounded-md capitalize w-fit px-5 font-semibold ">
+            {/* <ul className="flex flex-row space-x-2 h-fit py-2 items-center bg-white rounded-md capitalize w-fit px-5 font-semibold ">
               <Link to={"/"}>Home /</Link>
               <a>Vocational Courses in UK</a>
-            </ul>
+            </ul> */}
           </div>
 
           <div className="absolute inset-0 w-[95%] flex flex-row justify-between">
@@ -251,7 +255,7 @@ const VocationalCoursesUK = () => {
         <div className=" w-[90%] h-full font-Jakarta grid grid-cols-1 lg:grid-cols-2 place-items-center ">
           <div className="flex flex-col space-y-5">
             <p className="font-bold text-[16px] animate-fadein text-center lg:text-left text-primary">
-              Transform Your Career with UK Vocational Courses
+              Advance Your Career with UK Vocational Courses
             </p>
             <motion.p
               initial={{ opacity: 0, translateY: 100 }}
@@ -260,10 +264,9 @@ const VocationalCoursesUK = () => {
               transition={{ ease: "easeInOut", duration: 0.5 }}
               className="text-center lg:text-left xl:text-left md:text-left text-[1.3rem]  w-full  leading-snug "
             >
-              Take the next step in your professional journey! Our
-              industry-leading vocational courses in the UK offer hands-on
-              training and recognized certifications, designed to help you
-              succeed in the beauty, wellness, and holistic industries.
+              Gain in-demand skills through UK vocational courses designed for real-world success.
+              Our vocational training UK programs offer practical learning, recognized certifications,
+              and strong career opportunities in growing global industries.
             </motion.p>
           </div>
           <div className="h-full w-full ">
@@ -288,8 +291,7 @@ const VocationalCoursesUK = () => {
             <span className="text-text"> Our Course Categories</span>
           </motion.h2>
           <p className="text-text text-center text-[16px]">
-            Choose from a wide range of beauty and wellness courses, tailored to
-            your career goals:
+            Explore top beauty and wellness courses with career-focused course categories designed for global opportunities.
           </p>
           {data.course_categories.map((obj, index) => (
             <div className="flex flex-col gap-10 items-center w-full font-Jakarta cursor-pointer py-5">
@@ -332,10 +334,10 @@ const VocationalCoursesUK = () => {
             transition={{ ease: "linear", duration: 0.8 }}
             className="text-[30px] lg:text-[50px] md:text-[50px] leading-snug font-semibold z-20 text-center"
           >
-            Thinking about studying in the UK?
+            Study in the UK with Career Opportunities
           </motion.h2>
           <p className="text-text text-center text-[16px]">
-            Our vocational courses can help you with your visa application:
+            Build your future with UK study visa support and clear pathways to global careers.
           </p>
           <div className="grid grid-cols-1 lg:grid-cols-2 md:grid-cols-2 gap-5">
             <motion.div
@@ -349,8 +351,7 @@ const VocationalCoursesUK = () => {
                 <CheckBadgeIcon className="h-8 w-8 fill-primary" />
                 <h3 className="font-bold">Post-Study Work Opportunities</h3>
                 <p>
-                  Stay in the UK after you finish your course with a Graduate
-                  Route visa, allowing you to work for up to two years.
+                  Stay longer with the Graduate Route visa, gaining UK work experience after completing your course.
                 </p>
               </div>
             </motion.div>
@@ -365,8 +366,7 @@ const VocationalCoursesUK = () => {
                 <CheckBadgeIcon className="h-8 w-8 fill-primary" />
                 <h3 className="font-bold">Skilled Worker Visa</h3>
                 <p>
-                  Once you’ve completed your training, you may qualify for a job
-                  with a UK-based company and apply for a Skilled Worker Visa.
+                  Qualify for jobs and apply through the Skilled Worker visa, opening doors to long-term UK careers.
                 </p>
               </div>
             </motion.div>

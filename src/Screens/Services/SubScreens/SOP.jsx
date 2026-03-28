@@ -8,26 +8,27 @@ import SopImg from '../../../assets/Services/sop.webp'
 const SOP = () => {
     const data = {
         "id": "2",
-        "heading": "SOP Evaluation & Counseling",
+        "heading": "SOP Evaluation & Counseling Services That Elevate Your Application",
+        "desc":"Get expert SOP evaluation and counseling to refine your statement of purpose and improve selection chances.",
         "sections": [
           {
             "id": "2.1",
             "title": "Creating a Winning SOP",
-            "description": "A well-crafted Statement of Purpose (SOP) can be the key to distinguishing yourself in competitive university applications. Our experts help you write and refine an SOP that effectively communicates your academic and professional achievements, personal story, and career aspirations. We focus on making your SOP compelling, clear, and relevant to the program you're applying for.",
+            "description": "Our SOP writing services help craft a compelling statement that highlights achievements, goals, and career vision clearly. We ensure your document stands out with strong storytelling, clarity, and relevance for competitive university applications.",
             "icon": PencilIcon,
             "bgColor": "#FFEBEE"
           },
           {
             "id": "2.2",
             "title": "Individualized Feedback",
-            "description": "Each SOP is unique, and we provide detailed, personalized feedback on multiple aspects, including structure, narrative flow, and language. Our counsellors will work with you to highlight your strengths, showcase your academic and professional accomplishments, and create a coherent story that resonates with the admissions committee.",
+            "description": "Get personalized SOP review with detailed feedback on structure, clarity, grammar, and narrative flow. Our experts refine your content to highlight strengths, improve impact, and align with admission expectations for better success.",
             "icon": SpeakerWaveIcon,
             "bgColor": "#E3F2FD"
           },
           {
             "id": "2.3",
             "title": "Tailored SOPs for Different Institutions",
-            "description": "We ensure that each SOP is tailored to the specific program and university you are applying to, addressing the unique values, expectations, and research interests of the institutions.",
+            "description": "We provide customized SOP editing services tailored to each university and program requirements. Your document is optimized to match institution values, research goals, and expectations, increasing relevance and improving overall application strength.",
             "icon": BriefcaseIcon,
             "bgColor": "#E8F5E9"
           }
@@ -36,21 +37,21 @@ const SOP = () => {
           {
             "id": "2.4",
             "title": "SOP Drafting",
-            "description": "Initial consultation to understand your personal, academic, and career history to draft a compelling SOP.",
+            "description": "Understand your background and goals to create a strong, personalized statement draft.",
             "icon": DocumentTextIcon,
             "bgColor": "#FFFDE7"
           },
           {
             "id": "2.5",
             "title": "Detailed Review",
-            "description": "Comprehensive feedback on narrative flow, strengths, and areas for improvement.",
+            "description": "Get expert feedback on clarity, structure, storytelling, and overall application impact.",
             "icon": CheckCircleIcon,
             "bgColor": "#E1F5FE"
           },
           {
             "id": "2.6",
             "title": "Finalization",
-            "description": "Fine-tune the SOP to reflect your unique qualifications and align with university-specific requirements.",
+            "description": "Refine and polish your document to ensure clarity, accuracy, and alignment with specific requirements.",
             "icon": AdjustmentsVerticalIcon,
             "bgColor": "#FCE4EC"
           }
@@ -59,9 +60,9 @@ const SOP = () => {
   return (
     <>
     <Helmet>
-      <title>Career & Course Orientation</title>
+      <title> SOP Evaluation & Counseling Services That Elevate Your Application</title>
     </Helmet>
-    <BannerSection title={data.heading}/>
+    <BannerSection title={data.heading} desc={"Get expert SOP evaluation and counseling to refine your statement of purpose and improve selection chances."}/>
     <section className=" flex flex-col items-center my-10">
       <div className="w-[90%] flex flex-col space-y-10 ">
         <motion.h2

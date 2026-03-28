@@ -17,12 +17,13 @@ const AdmissionWorldUnversity = () => {
   const data = {
     id: "3",
     heading: "Admission to World-Ranking Universities",
+    desc:"Benchmark Education helps students gain admission to top-ranked universities worldwide with expert guidance and support.",
     sections: [
       {
         id: "3.1",
         title: "Strategic Application Support",
         description:
-          "Securing admission to a top-ranking university involves more than just filling out forms. We help you identify and apply to the world’s leading institutions, ensuring you meet all the criteria required to gain admission. Our expertise spans a wide range of countries, including the US, UK, Canada, Australia, Europe, and Asia.",
+          "Securing admission to a top‑ranking university involves more than just filling out forms. At Benchmark Education, we offer expert admission support services that help you choose and apply to the world’s leading institutions. Whether you’re targeting the US, UK, Canada, Australia, Europe, or Asia, our team ensures you meet every requirement for top university admissions success.",
         icon: FlagIcon,
         bgColor: "#FFEB3B",
       },
@@ -30,7 +31,7 @@ const AdmissionWorldUnversity = () => {
         id: "3.2",
         title: "Competitive Applications",
         description:
-          "Our admissions experts work with you to create a strong application that highlights your academic achievements, extracurricular involvement, and future potential. We guide you through each aspect of the application process, from filling out forms to preparing supporting documents such as recommendation letters, transcripts, and test scores.",
+          "Our admissions specialists collaborate with you to build a standout application that highlights your academic achievements, extracurricular involvement, and future potential. From form completion to document preparation including recommendation letters, transcripts, and test scores we guide you step by step for a successful university application.",
         icon: ClipboardDocumentListIcon,
         bgColor: "#E1BEE7",
       },
@@ -38,7 +39,7 @@ const AdmissionWorldUnversity = () => {
         id: "3.3",
         title: "Proven Track Record",
         description:
-          "With years of experience helping students gain admission to top universities globally, we have a high success rate in placing students in institutions that best fit their academic and career goals.",
+          "With years of experience helping students gain acceptance into top global universities, we boast a high success rate in placing learners into programs that align with their academic and career goals. Trust Benchmark Education for personalized strategies, expert insights, and results‑driven support to excel in international admissions guidance.",
         icon: HandThumbUpIcon,
         bgColor: "#B2EBF2",
       },
@@ -48,7 +49,7 @@ const AdmissionWorldUnversity = () => {
         id: "3.4",
         title: "Target University Identification",
         description:
-          "Help you shortlist universities that match your academic profile, interests, and career goals.",
+          " Shortlist top-ranked universities matching your academic profile, interests, and future career goals.",
         icon: AcademicCapIcon,
         bgColor: "#FFF3E0",
       },
@@ -56,7 +57,7 @@ const AdmissionWorldUnversity = () => {
         id: "3.5",
         title: "Application Preparation",
         description:
-          "Assist with filling out application forms, preparing necessary documents (including transcripts, test scores, and essays), and ensuring everything meets university requirements.",
+          "Receive university application assistance for forms, transcripts, essays, and supporting documents.",
         icon: PencilIcon,
         bgColor: "#E6EE9C",
       },
@@ -64,7 +65,7 @@ const AdmissionWorldUnversity = () => {
         id: "3.6",
         title: "Submission and Follow-Up",
         description:
-          "Monitor the progress of your applications, follow up with universities, and ensure that all deadlines are met.",
+          "Track applications, communicate with universities, and ensure all deadlines are met efficiently.",
         icon: PaperAirplaneIcon,
         bgColor: "#FFCCBC",
       },
@@ -75,7 +76,7 @@ const AdmissionWorldUnversity = () => {
       <Helmet>
         <title>Admission to World-Ranking Universities</title>
       </Helmet>
-      <BannerSection title={data.heading} />
+      <BannerSection title={data.heading} desc={data.desc}/>
       <section className=" flex flex-col items-center my-10">
         <div className="w-[90%] flex flex-col space-y-10 ">
           <motion.h2

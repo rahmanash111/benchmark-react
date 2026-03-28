@@ -22,6 +22,7 @@ import { Bounce, toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { useLocation } from "react-router-dom";
 import { gql, useMutation } from "@apollo/client";
+import { gtag_report_conversion } from "../Utils/Index";
 
 const CounsellingForm = ({ isopenForm, setOpenForm }) => {
   const location = useLocation();
@@ -542,7 +543,9 @@ const CounsellingForm = ({ isopenForm, setOpenForm }) => {
 
     try {
       await createCounsellingForm({ variables });
-
+      
+      gtag_report_conversion()
+      
       setFormData({
         firstname: "",
         lastname: "",
