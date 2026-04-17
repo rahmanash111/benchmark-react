@@ -329,6 +329,9 @@ const data = {
 };
 
 const VocationalCoursesFinland = () => {
+  
+  const isMobile = window.innerWidth < 760;
+
   return (
     <section>
       <Helmet>
@@ -346,13 +349,16 @@ const VocationalCoursesFinland = () => {
         <div className="h-[138px] w-full flex flex-row items-center justify-center relative">
           <div className="container w-[90%] z-10">
             <h2 className="text-[1.5rem] md:text-[2.5rem] lg:text-[3rem]  font-bold text-left text-white capitalize">
-              Vocational Courses in the Finland <br /> with Benchmark Education 
+              Vocational Courses in the Finland <br /> with Benchmark Education
             </h2>
 
+            {!isMobile && <p className="text-white text-[14px] md:text-[16px] mt-6">Gain practical, career-focused skills through expert-guided vocational programs designed to prepare you for real job opportunities in the Finland.</p>}
+
+            {/* 
             <ul className="flex flex-row space-x-2 h-fit py-2 items-center bg-white rounded-md capitalize w-fit px-5 font-semibold ">
               <Link to={"/"}>Home /</Link>
               <a>Vocational Courses in Finland</a>
-            </ul>
+            </ul> */}
           </div>
 
           <div className="absolute inset-0 w-[95%] flex flex-row justify-between">
@@ -382,7 +388,7 @@ const VocationalCoursesFinland = () => {
               transition={{ ease: "easeInOut", duration: 0.5 }}
               className="text-center lg:text-left xl:text-left md:text-left text-[1.3rem]  w-full  leading-snug "
             >
-              Advance your future with Finland vocational courses offering practical training, global certifications, 
+              Advance your future with Finland vocational courses offering practical training, global certifications,
               and strong career opportunities in beauty, wellness, and holistic industries through industry-focused
               vocational training Finland programs.
             </motion.p>

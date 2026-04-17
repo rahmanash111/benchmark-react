@@ -26,26 +26,26 @@ import Universities from './Screens/Universities'
 import VocationalCoursesUK from './Screens/Vocational Courses/Uk'
 import VocationalCoursesFinland from './Screens/Vocational Courses/Finland'
 import MarketPage from './Screens/MarketingPage'
-import DigitalMarketingAcademy from './Screens/Digital Marketing Academy'
-import StudyAbroad from './Screens/StudyAbroad'
+ import DigitalMarketingAcademy, { DigitalMarketingAcademy2 } from './Screens/Digital Marketing Academy'
+import StudyAbroad, { PlacementConsulting } from './Screens/StudyAbroad'
 import StudyInUK from './Screens/StudyInUK'
 import StudyInDubai from './Screens/StudyInDubai'
 import StudyInSingapore from './Screens/StudyInSingapore'
 import StudyInAustralia from './Screens/StudyInAustralia'
 import StudyInMauritius from './Screens/StudyInMauritius'
 import StudyInIndia from './Screens/StudyInIndia'
+import CourseSection from './Screens/Courses'
 const App = () => {
-  const location = useLocation()
-  const[isLoading,setIsLoading]=useState(true);
-  useEffect(()=>{
+  const { pathname } = useLocation()
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
     const timer = setTimeout(() => {
       setIsLoading(false)
-      
     }, 1500);
 
-    return ()=>clearTimeout(timer)
-
-  },[location])
+    return () => clearTimeout(timer)
+  }, [pathname])
 
   // useEffect(() => {
   //   const googleTranslateElementInit = () => {
@@ -85,58 +85,61 @@ const App = () => {
   // }, []);
   return (
     <>
-    {
-      isLoading && <Loader/>
-    }
-    {
-      !isLoading && (
+      {
+        isLoading && <Loader />
+      }
+      {
+        !isLoading && (
 
-        <>
-        <Header/>
-        <ScrollToTop/>
-        {/* <div id="google_translate_element" className='absolute'></div> */}
-        
-        <Routes>
-          <Route path='/' element={<Home/>}/>
-          <Route path='/aboutus' element={<Aboutus/>}/>
-          {/* <Route path='/services' element={<Services/>}/> */}
-          <Route path='/services/visa-carrer-course&orinetation' element={<CCAndOrientation/>}/>
-          <Route path='/services/SOP' element={<SOP/>}/>
-          <Route path='/services/language-training' element={<LanguageTraining/>}/>
-          <Route path='/services/admission-world-ranking-university' element={<AdmissionWorldUnversity/>}/>
-          <Route path='/services/scholarship&finance' element={<ScholarshipAndFinance/>}/>
-          <Route path='/services/end-to-end-admission' element={<EtoE/>}/>
-          <Route path='/services/visa-and-spouse-visa-guidence' element={<VisaAndVisaGuidence/>}/>
-          <Route path='/services/education-loan-assist' element={<EduLoanAssit/>}/>
-          <Route path='/services/travel-desk-and-accomodation' element={<TravelDesk/>}/>
-          {/* <Route path='/countries' element={<Country/>}/> */}
-          <Route path='/universities' element={<Universities/>}/>
-          <Route path='/vocational-uk' element={<VocationalCoursesUK/>}/>
-          <Route path='/vocational-finland' element={<VocationalCoursesFinland/>}/>
-          <Route path='/countries/:continentName/:countryName' element={<CountryDetails/>}/>
-          <Route path='/contactus' element={<Contactus/>}/>
-          <Route path='/events' element={<MarketPage/>}/>
-          <Route path='/events/:eventname' element={<MarketPage/>}/>
-          <Route path='/digital-marketing-academy' element={<DigitalMarketingAcademy/>}/>
-          <Route path='/study-abroad' element={<StudyAbroad/>}/>
-          <Route path='/study-in-uk' element={<StudyInUK/>}/>
-          <Route path='/study-in-dubai' element={<StudyInDubai/>}/>
-          <Route path='/study-in-singapore' element={<StudyInSingapore/>}/>
-          <Route path='/study-in-australia' element={<StudyInAustralia/>}/>
-          <Route path='/study-in-mauritius' element={<StudyInMauritius/>}/>
-          <Route path='/study-in-india' element={<StudyInIndia/>}/>
-          <Route path='/*' element={<PageNotFound/>}/>
-        </Routes>
-      
-        <Footer/>
-        <BacktoTopButton/>
-        <FloatingWhatsapp/>
-        <ToastContainer containerId="GlobalToastContainer"/>
-        </>
-      )
-      
-    }
-    
+          <>
+            <Header />
+            <ScrollToTop/>
+            {/* <div id="google_translate_element" className='absolute'></div> */}
+
+            <Routes>
+              <Route path='/' element={<Home />} />
+              <Route path='/aboutus' element={<Aboutus />} />
+              <Route path='/courses' element={<CourseSection />} />
+              {/* <Route path='/services' element={<Services/>}/> */}
+              <Route path='/services/visa-carrer-course&orinetation' element={<CCAndOrientation />} />
+              <Route path='/services/SOP' element={<SOP />} />
+              <Route path='/services/language-training' element={<LanguageTraining />} />
+              <Route path='/services/admission-world-ranking-university' element={<AdmissionWorldUnversity />} />
+              <Route path='/services/scholarship&finance' element={<ScholarshipAndFinance />} />
+              <Route path='/services/end-to-end-admission' element={<EtoE />} />
+              <Route path='/services/visa-and-spouse-visa-guidence' element={<VisaAndVisaGuidence />} />
+              <Route path='/services/education-loan-assist' element={<EduLoanAssit />} />
+              <Route path='/services/travel-desk-and-accomodation' element={<TravelDesk />} />
+              {/* <Route path='/countries' element={<Country/>}/> */}
+              <Route path='/universities' element={<Universities />} />
+              <Route path='/vocational-uk' element={<VocationalCoursesUK />} />
+              <Route path='/vocational-finland' element={<VocationalCoursesFinland />} />
+              <Route path='/countries/:continentName/:countryName' element={<CountryDetails />} />
+              <Route path='/contactus' element={<Contactus />} />
+              <Route path='/events' element={<MarketPage />} />
+              <Route path='/events/:eventname' element={<MarketPage />} />
+              <Route path='/digital-marketing-academy' element={<DigitalMarketingAcademy2 />} />
+              <Route path='/bvoc-digital-marketing' element={<DigitalMarketingAcademy />} />
+              <Route path='/study-abroad' element={<StudyAbroad />} />
+              <Route path='/placement-consulting' element={<PlacementConsulting />} />
+              <Route path='/study-in-uk' element={<StudyInUK />} />
+              <Route path='/study-in-dubai' element={<StudyInDubai />} />
+              <Route path='/study-in-singapore' element={<StudyInSingapore />} />
+              <Route path='/study-in-australia' element={<StudyInAustralia />} />
+              <Route path='/study-in-mauritius' element={<StudyInMauritius />} />
+              <Route path='/study-in-india' element={<StudyInIndia />} />
+              <Route path='/*' element={<PageNotFound />} />
+            </Routes>
+
+            <Footer />
+            <BacktoTopButton />
+            <FloatingWhatsapp />
+            <ToastContainer containerId="GlobalToastContainer" />
+          </>
+        )
+
+      }
+
     </>
 
   )

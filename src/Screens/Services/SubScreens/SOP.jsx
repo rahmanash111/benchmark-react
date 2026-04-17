@@ -8,7 +8,8 @@ import SopImg from '../../../assets/Services/sop.webp'
 const SOP = () => {
     const data = {
         "id": "2",
-        "heading": "SOP Evaluation & Counseling",
+        "heading": "SOP Evaluation & Counseling Services That Elevate Your Application",
+        "desc":"Get expert SOP evaluation and counseling to refine your statement of purpose and improve selection chances.",
         "sections": [
           {
             "id": "2.1",
@@ -59,9 +60,9 @@ const SOP = () => {
   return (
     <>
     <Helmet>
-      <title>Career & Course Orientation</title>
+      <title> SOP Evaluation & Counseling Services That Elevate Your Application</title>
     </Helmet>
-    <BannerSection title={data.heading}/>
+    <BannerSection title={data.heading} desc={"Get expert SOP evaluation and counseling to refine your statement of purpose and improve selection chances."}/>
     <section className=" flex flex-col items-center my-10">
       <div className="w-[90%] flex flex-col space-y-10 ">
         <motion.h2

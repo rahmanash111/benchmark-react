@@ -34,7 +34,7 @@ const Contactus = () => {
   <h3 className='text-center font-bold font-Jakarta'>Address</h3>
 
   <div className='flex flex-col space-y-1 font-DM-Sans font-medium text-center'>
-    <a>191, 3rd Floor, Hamid Building, Whites Road, Anna Salai, Chennai – 600006.
+    <a>37, 3rd Cross St, Venkateswara Colony, Nehru Nagar, Perungudi, Chennai, Tamil Nadu 600041.
 </a>
     {/* <a>1st Floor, K L Tower, Mala Vazhi Junction, Above KSFE, Thrissur Pin Code: 680683
 </a> */}

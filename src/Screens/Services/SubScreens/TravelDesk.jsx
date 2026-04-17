@@ -9,6 +9,7 @@ const TravelDesk = () => {
     const data ={
         "id": "8",
         "heading": "Travel Desk & Accommodation Support for Students",
+        "desc":"Reliable travel booking and accommodation services ensuring safe stay, smooth relocation, and stress free experience.",
         "sections": [
           {
             "id": "8.1",
@@ -55,7 +56,7 @@ const TravelDesk = () => {
     <Helmet>
       <title>Travel Desk & Accommodation</title>
     </Helmet>
-    <BannerSection title={data.heading}/>
+    <BannerSection title={data.heading} desc={data.desc}/>
     <section className=" flex flex-col items-center my-10">
       <div className="w-[90%] flex flex-col space-y-10 ">
         <motion.h2

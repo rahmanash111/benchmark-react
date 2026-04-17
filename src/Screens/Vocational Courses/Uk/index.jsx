@@ -206,6 +206,9 @@ const data = {
 };
 
 const VocationalCoursesUK = () => {
+
+  const isMobile = window.innerWidth < 760;
+
   return (
     <section>
       <Helmet>
@@ -226,12 +229,12 @@ const VocationalCoursesUK = () => {
               {" "}
               Vocational Courses in the UK <br /> with Benchmark Education
             </h2>
-            
+            {!isMobile && <p className="text-white text-[14px] md:text-[16px] mt-6">Gain practical, career-focused skills through expert-guided vocational programs designed to prepare you for real job opportunities in the UK.</p>}
 
-            <ul className="flex flex-row space-x-2 h-fit py-2 items-center bg-white rounded-md capitalize w-fit px-5 font-semibold ">
+            {/* <ul className="flex flex-row space-x-2 h-fit py-2 items-center bg-white rounded-md capitalize w-fit px-5 font-semibold ">
               <Link to={"/"}>Home /</Link>
               <a>Vocational Courses in UK</a>
-            </ul>
+            </ul> */}
           </div>
 
           <div className="absolute inset-0 w-[95%] flex flex-row justify-between">
@@ -261,9 +264,9 @@ const VocationalCoursesUK = () => {
               transition={{ ease: "easeInOut", duration: 0.5 }}
               className="text-center lg:text-left xl:text-left md:text-left text-[1.3rem]  w-full  leading-snug "
             >
-             Gain in-demand skills through UK vocational courses designed for real-world success.
-             Our vocational training UK programs offer practical learning, recognized certifications,
-             and strong career opportunities in growing global industries.
+              Gain in-demand skills through UK vocational courses designed for real-world success.
+              Our vocational training UK programs offer practical learning, recognized certifications,
+              and strong career opportunities in growing global industries.
             </motion.p>
           </div>
           <div className="h-full w-full ">

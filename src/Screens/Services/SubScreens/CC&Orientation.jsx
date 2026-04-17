@@ -17,7 +17,8 @@ import CCImg from '../../../assets/Services/cco.webp'
 const CCAndOrientation = () => {
   const data = {
     id: "1",
-    heading: "Career & Course Orientation",
+    heading: "Professional Career Counselling and Course Guidance Services",
+    desc:"Benchmark Education provides professional career counselling and course guidance to help individuals choose the right academic path and build a successful future.",
     sections: [
       {
         id: "1.1",
@@ -84,7 +85,7 @@ const CCAndOrientation = () => {
       <Helmet>
         <title>Career & Course Orientation</title>
       </Helmet>
-      <BannerSection title={data.heading}/>
+      <BannerSection title={data.heading} desc={data.desc}/>
       <section className=" flex flex-col items-center my-10">
         <div className="w-[90%] flex flex-col space-y-10 ">
           <motion.h2

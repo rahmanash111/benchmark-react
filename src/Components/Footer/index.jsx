@@ -14,6 +14,7 @@ import { Bounce, toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Dots from "../../assets/Images/dots.svg";
 import { gql, useMutation, useQuery } from "@apollo/client";
+import { gtag_report_conversion } from "../Utils/Index";
 
 const Footer = () => {
   const date = new Date();
@@ -28,7 +29,7 @@ const Footer = () => {
   const [errors, setErrors] = useState({});
   const [isFormValid, setIsFormValid] = useState(false);
   const [status, setStatus] = useState("");
-  const[isSubmit,setIsSubmit]=useState(false)
+  const [isSubmit, setIsSubmit] = useState(false)
 
   // const updateStatus=(code)=>{
   //   setStatusCode(code)
@@ -188,6 +189,8 @@ const Footer = () => {
         Subject: "",
       });
 
+      gtag_report_conversion();
+
       // Show success notification
       toast.success("Form submitted successfully!", {
         position: "bottom-left",
@@ -337,7 +340,7 @@ const Footer = () => {
                 </span>
               )}
               <button
-                className={`w-full lg:w-[60%] md:w-1/2 px-3 py-2 lg:px-10 lg:py-3 md:px-3 ${isSubmit ? 'bg-gray-400 cursor-not-allowed':'bg-primary hover:bg-secondary '}  text-white  rounded-lg font-medium`}
+                className={`w-full lg:w-[60%] md:w-1/2 px-3 py-2 lg:px-10 lg:py-3 md:px-3 ${isSubmit ? 'bg-gray-400 cursor-not-allowed' : 'bg-primary hover:bg-secondary '}  text-white  rounded-lg font-medium`}
                 type="submit" disabled={isSubmit}
               >
                 Send Message
@@ -347,7 +350,7 @@ const Footer = () => {
         </div>
         <div>
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d153085.7302461338!2d80.17118182966374!3d12.97878697264739!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a525df69e94911d%3A0x41a0d5101c99685d!2sBenchmark%20Education!5e1!3m2!1sen!2sin!4v1774073218537!5m2!1sen!2sin" 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d497351.2672528503!2d79.66079511813165!3d13.127240958643812!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a525df69e94911d%3A0x41a0d5101c99685d!2sBenchmark%20Education!5e0!3m2!1sen!2sin!4v1774690678130!5m2!1sen!2sin"
             width="100%"
             height="100%"
             className="h-[550px]"
@@ -361,8 +364,8 @@ const Footer = () => {
       <div className="lg:w-[90%] w-[95%] grid lg:grid-cols-3 grid-cols-1 h-full gap-5 py-5">
         <div className="flex flex-col items-start space-y-10 px-5 py-5 ">
           <h4 className="text-[1.6rem] font-bold">
-           Ready to take the next step in your education? Connect with us today and 
-           start your learning journey
+            Ready to take the next step in your education? Connect with us today and
+            start your learning journey
           </h4>
           <ul className="flex flex-col gap-5">
             <li className="flex flex-row gap-5 items-center text-[1rem] font-semibold">

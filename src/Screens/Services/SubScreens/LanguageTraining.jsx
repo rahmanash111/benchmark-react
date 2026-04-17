@@ -616,9 +616,9 @@ const LanguageTraining = () => {
   return (
     <>
       <Helmet>
-        <title>Language Training</title>
+        <title>Professional Language Training at Benchmark Education</title>
       </Helmet>
-      <BannerSection title={"Language Training"}/>
+      <BannerSection title={"Professional Language Training at Benchmark Education"} desc={"At Benchmark Education, our professional language training programs help learners improve communication, build confidence, and develop strong speaking, writing, and comprehension skills for academic and career success."}/>
       <section className="flex flex-col items-center justify-center font-Jakarta">
         <div className="w-[90%] grid lg:grid-cols-[1fr,3fr] grid-cols-1 gap-5 py-16">
           <div className=" w-full flex flex-col items-center  space-y-10 lg:order-1 xl:order-1 order-2  relative">

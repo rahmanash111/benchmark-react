@@ -163,9 +163,13 @@ const Header = () => {
         },
       ],
     },
+    // {
+    //   name: "Universities",
+    //   path: "/universities",
+    // },
     {
-      name: "Universities",
-      path: "/universities",
+      name: "Courses",
+      path: "/courses",
     },
     {
       name: "Vocational Courses",
@@ -312,9 +316,7 @@ const Header = () => {
               </li>
               <li className="flex flex-row items-center justify-center space-x-2">
                 <MapPinIcon className="h-5 w-5 fill-primary" />
-                <p>
-                  191, 3rd Floor, Hamid Building, Whites Road, Anna Salai,
-                  Chennai – 600006.
+                <p>37, 3rd Cross St, Venkateswara Colony, Nehru Nagar, Perungudi, Chennai, Tamil Nadu 600041.
                 </p>
                 {/* <p>
             1st Floor, K L Tower, Mala Vazhi Junction,Above KSFE, Thrissur
@@ -326,19 +328,19 @@ const Header = () => {
         </div>
       )}
       <div
-        className={`min-h-[13vh]  flex flex-row items-center justify-between px-10 space-x-8 border-2 ${
+        className={`min-h-[9vh] md:min-h-[9vh]  flex flex-row items-center justify-between px-10 space-x-8 border-2 ${
           isScrolled
             ? "fixed top-0 w-full bg-white animate-fadeindown z-50"
             : ""
         }`}
       >
-        <a href="/" className="flex flex-col items-center h-[20px] w-auto">
+        <Link to={"/"} className="flex flex-col items-center h-[20px] w-auto">
           <img
             src={Logo}
             alt="Logo.svg"
             className="h-full w-full object-contain"
           />
-        </a>
+        </Link>
 
         {location.pathname != "/eventpage" && (
           <ul className="flex-row items-center space-x-16 font-medium text-[14px] hidden xl:flex lg:flex">
@@ -582,12 +584,19 @@ const Header = () => {
                   )}
                 </>
               ))}
-              <Link
+              {/* <Link
                 to={"/universities"}
                 className="w-full text-center justify-center flex flex-row gap-2 items-center "
                 onClick={() => setOpenDrawer(false)}
               >
                 Universities
+              </Link> */}
+              <Link
+                to={"/courses"}
+                className="w-full text-center justify-center flex flex-row gap-2 items-center "
+                onClick={() => setOpenDrawer(false)}
+              >
+                Courses
               </Link>
               <Link
                 to={"/contactus"}

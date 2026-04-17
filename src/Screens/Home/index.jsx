@@ -26,6 +26,7 @@ import bannermobile2 from "../../assets/hero/bannerformobile.webp";
 import bannermobile3 from "../../assets/hero/bannerformobileBVoc.webp";
 import bannermobile4 from "../../assets/hero/bannerformobiledigitalmarketing.webp";
 import bannermobile5 from "../../assets/hero/mbamobile.webp";
+import placementconsulting from '../../assets/Images/placement-consulting.webp'
 
 
 import banner1 from "../../assets/hero/banner 1.webp";
@@ -749,17 +750,17 @@ const Home = () => {
     setOpenForm(true);
   };
 
-  const location = useLocation();
+  const { pathname } = useLocation();
 
   useEffect(() => {
-    if (location.pathname === "/") {
+    if (pathname === "/") {
       const timer = setTimeout(() => {
         setOpenForm(true);
       }, 3000);
 
       return () => clearTimeout(timer);
     }
-  }, [location]);
+  }, [pathname]);
 
   const itemsCoursePerPage = 6;
 
@@ -876,7 +877,7 @@ const Home = () => {
             className="relative w-full md:w-1/2 overflow-hidden shadow-xl group rounded-2xl"
           >
             <img
-              src={digitalMarketingImgBvoc}
+              src={digitalMarketingImg}
               alt="Digital Marketing Academy"
               className="w-full h-[320px] md:h-[420px] object-cover transform group-hover:scale-105 transition-transform duration-500"
             />
@@ -885,7 +886,7 @@ const Home = () => {
 
           {/* RIGHT CONTENT */}
           <motion.div
-          
+
             initial={{ opacity: 0, x: 60 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
@@ -897,7 +898,7 @@ const Home = () => {
             </h2>
 
             <p className="text-[16px] md:text-[18px] text-text leading-relaxed">
-              Benchmark Education offers a comprehensive diploma in digital marketing designed to build practical skills in SEO, social media marketing, content marketing, and online advertising. Our digital marketing course focuses on real-world training, industry tools, and expert guidance to help students gain job-ready skills and grow confidently in today’s competitive digital marketing industry with hands-on learning and career-focused support. 
+              Benchmark Education offers a comprehensive diploma in digital marketing designed to build practical skills in SEO, social media marketing, content marketing, and online advertising. Our digital marketing course focuses on real-world training, industry tools, and expert guidance to help students gain job-ready skills and grow confidently in today’s competitive digital marketing industry with hands-on learning and career-focused support.
             </p>
 
             <div className="flex flex-col space-y-3">
@@ -930,7 +931,7 @@ const Home = () => {
             className="relative w-full md:w-1/2 overflow-hidden shadow-xl group rounded-2xl"
           >
             <img
-              src={digitalMarketingImg}
+              src={digitalMarketingImgBvoc}
               alt="Digital Marketing Academy"
               className="w-full h-[320px] md:h-[420px] object-cover transform group-hover:scale-105 transition-transform duration-500"
             />
@@ -946,25 +947,20 @@ const Home = () => {
             className="flex flex-col space-y-6 text-center md:text-left max-w-xl"
           >
             <h2 className="text-4xl md:text-5xl font-semibold leading-tight">
-              B.Voc Digital Marketing Degree Program
+              B.Voc Digital Marketing Program
             </h2>
 
             <p className="text-[16px] md:text-[18px] text-text leading-relaxed">
-              Benchmark Education is one of the best institutes for digital marketing,
-              offering comprehensive training designed for beginners and professionals.
-              Expert trainers focus on practical learning in SEO, social media marketing,
-              content marketing, and online advertising. With an industry-relevant curriculum and hands-on projects,
-              the program builds strong skills and confidence to succeed in today’s fast-growing digital marketing industry.
-
+              Build a future-ready career with our B.Voc digital marketing program designed for real-world learning. Gain hands-on experience through live digital marketing projects, along with a 3 month internship in first year and a 6 month internship in final year. This job-oriented digital marketing degree program equips you with in-demand skills and practical exposure to succeed in the industry.
             </p>
 
             <div className="flex flex-col space-y-3">
               <p className="text-[14px] md:text-[16px] text-text leading-relaxed font-medium">
-                <span className="text-primary">New Add-ons:</span> Neuro Digital Marketing, Advanced Excel, and Web Development modules now available!
+                <span className="text-primary">New Add-ons:</span> Video Editing, Graphic Design, UI/UX Design, and Neuro Digital Marketing modules now available!
               </p>
               <div className="flex flex-col sm:flex-row gap-4 sm:justify-start justify-center">
                 <Link
-                  to="/digital-marketing-academy"
+                  to="/bvoc-digital-marketing"
                   className="inline-block bg-primary hover:bg-secondary text-white px-6 py-3 rounded-lg text-base font-medium shadow-lg transition-colors duration-300"
                 >
                   Explore Course
@@ -1088,6 +1084,57 @@ const Home = () => {
                 Nursing Entry
               </a>
             </div>
+          </motion.div>
+        </div>
+      </section>
+
+
+      {/* Study Abroad CTA Section */}
+      <section className="my-16 w-full flex justify-center items-center bg-gradient-to-r from-blue-50 via-white to-purple-50 py-12 md:py-16">
+
+        <div className="w-[90%] max-w-7xl flex flex-col md:flex-row items-center justify-between gap-10 font-Jakarta">
+
+          {/* LEFT CONTENT */}
+          <motion.div
+            initial={{ opacity: 0, x: -60 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ ease: "easeInOut", duration: 0.8 }}
+            className="flex flex-col space-y-6 text-center md:text-left max-w-xl"
+          >
+            <h2 className="text-4xl md:text-5xl font-semibold leading-tight">
+              Placement Consulting
+            </h2>
+
+            <p className="text-[16px] md:text-[18px] text-text leading-relaxed">
+              At Benchmark Education, our placement consulting is designed to turn students into job-ready professionals. With strong campus placement support and expert job consultant guidance, we help you build the right skills, create impactful resumes, and crack interviews. Our focus is simple connect you with real opportunities and help you start your career with confidence.
+            </p>
+
+            <div>
+              <Link
+                to="/placement-consulting"
+                className="inline-block bg-primary hover:bg-secondary text-white px-6 py-3 rounded-lg text-base font-medium shadow-lg transition-colors duration-300"
+              >
+                Explore Placement Consulting
+              </Link>
+            </div>
+          </motion.div>
+
+          {/* RIGHT IMAGE */}
+          <motion.div
+            initial={{ opacity: 0, x: 60 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ ease: "easeInOut", duration: 0.8 }}
+            // style={{borderRadius:'0 20px 20px 0'}}
+            className="relative w-full md:w-1/2 rounded-2xl overflow-hidden shadow-xl group"
+          >
+            <img
+              src={placementconsulting}
+              alt="Study Abroad"
+              className="w-full h-[320px] md:h-[420px] object-cover "
+            />
+            <div className="absolute inset-0 bg-black/10"></div>
           </motion.div>
         </div>
       </section>
@@ -1444,7 +1491,7 @@ const Home = () => {
               to ensure a smooth journey toward global academic and career success.
             </p>
           </div>
-          <div className="flex md:flex-row flex-col justify-evenly font-Jakarta gap-16 bg-background rounded-lg py-10 px-5 relative top-0 w-full">
+          <div className="flex md:flex-row flex-col flex-wrap justify-evenly font-Jakarta gap-16 bg-background rounded-lg py-10 px-5 relative top-0 w-full">
             {TeamData.map((obj, index) => (
               // to={`/aboutus/${obj.name.replace(/\s+/g, "-").toLowerCase()}`}
               // // state={{ id: obj.id }}
@@ -1535,7 +1582,7 @@ const Home = () => {
           </div>
         </div>
       </section>
-      {/* <EventSection /> */}
+      <EventSection />
       {/* <section className="min-h-screen my-5 bg-background  flex flex-col items-center justify-center font-Jakarta py-10">
         <div className="w-[90%]  flex flex-col h-fit gap-10 ">
           <div className="flex flex-col space-y-10 ">

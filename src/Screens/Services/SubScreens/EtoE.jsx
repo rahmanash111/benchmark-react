@@ -8,7 +8,8 @@ import EtEImg from '../../../assets/Services/ete.webp'
 const EtoE = () => {
     const data = {
         "id": "5",
-        "heading": "End-To-End Admission Support",
+        "heading": "Complete Admission Guidance",
+        "desc":"Expert support for university applications, ensuring smooth enrollment process and international admission planning from start to finish.",
         "sections": [
             {
                 "id": "5.1",
@@ -60,9 +61,9 @@ const EtoE = () => {
   return (
     <>
     <Helmet>
-      <title>End-To-End Admission Support</title>
+      <title>Complete Admission Guidance</title>
     </Helmet>
-    <BannerSection title={data.heading}/>
+    <BannerSection title={data.heading} desc={data.desc}/>
     <section className=" flex flex-col items-center my-10">
       <div className="w-[90%] flex flex-col space-y-10 ">
         <motion.h2

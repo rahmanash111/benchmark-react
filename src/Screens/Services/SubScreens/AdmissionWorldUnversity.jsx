@@ -17,6 +17,7 @@ const AdmissionWorldUnversity = () => {
   const data = {
     id: "3",
     heading: "Admission to World-Ranking Universities",
+    desc:"Benchmark Education helps students gain admission to top-ranked universities worldwide with expert guidance and support.",
     sections: [
       {
         id: "3.1",
@@ -75,7 +76,7 @@ const AdmissionWorldUnversity = () => {
       <Helmet>
         <title>Admission to World-Ranking Universities</title>
       </Helmet>
-      <BannerSection title={data.heading} />
+      <BannerSection title={data.heading} desc={data.desc}/>
       <section className=" flex flex-col items-center my-10">
         <div className="w-[90%] flex flex-col space-y-10 ">
           <motion.h2

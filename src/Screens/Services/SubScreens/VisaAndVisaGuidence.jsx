@@ -9,7 +9,8 @@ const VisaAndVisaGuidence = () => {
 
     const data = {
         "id": "6",
-        "heading": "Visa & Spouse Visa Guidance Service",
+        "heading": "Visa & Spouse Visa Guidance Services | Benchmark Education",
+        "desc":"Benchmark Education offers spouse visa guidance and visa application support for faster approvals with expert assistance.",
         "sections": [
             {
                 "id": "6.1",
@@ -63,7 +64,7 @@ const VisaAndVisaGuidence = () => {
     <Helmet>
       <title>Visa & Spouse Visa Guidance</title>
     </Helmet>
-    <BannerSection title={data.heading}/>
+    <BannerSection title={data.heading} desc={data.desc}/>
     <section className=" flex flex-col items-center my-10">
       <div className="w-[90%] flex flex-col space-y-10 ">
         <motion.h2
